@@ -1,0 +1,51 @@
+body{
+    background-image: url("https://cdn.allwallpaper.in/wallpapers/1920x1080/13317/calvin-and-hobbes-quotes-1920x1080-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#p2{
+    display: none;
+}
+
+#p3{
+    display: none;
+}
+
+#header{
+    width: 75%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#aboutMe{
+    margin-left: 50px;
+    width: 65%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#assignments{
+    width: 65%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#change{
+    width: 65%;
+    text-align: center;
+}
+
+#button1{
+    border-radius: 15px;
+    padding: 16px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+}
+
+#button1:hover{
+    background-color: white;
+    color: #008CBA;
+    cursor: pointer;
+}
