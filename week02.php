@@ -30,7 +30,7 @@ $_SESSION['items']=$list;
         <form>
         <div class="gallery">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxCRpplAK1KUET2NqrEOCGskBpARJrRdr9M2vXs3qz7CNVKmC" width="320" height="300">
-            <div class="desc"><p>Grey Backpack With Stripes</p><input type="number" name="quantity" min="1" max="9"><!--<button onclick="addItem('Grey Backpack With Stripes');" id="button">Add to Cart</button></div>-->
+            <div class="desc"><p>Grey Backpack With Stripes<br> Select the amount you wish to purchase 1-9</p><input type="number" name="quantity" min="1" max="9"><!--<button onclick="addItem('Grey Backpack With Stripes');" id="button">Add to Cart</button></div>-->
         </div>
         <div class="gallery">
             <img src="https://cdn.shopify.com/s/files/1/0851/3262/products/School_Backpack_Heavyweight_Ochre-01_1024x1024.jpg?v=1533162547" width="320" height="300"> 
@@ -60,8 +60,9 @@ $_SESSION['items']=$list;
             <img src="https://d1wwyfhxuarwk4.cloudfront.net/images/products/common/white/large/4584-w_personalized-kids-backpack-giraffe.jpg" width="320" height="300">
             <div class="desc"><p>Giraffe Backpack</p><br><button onclick="addItem('Giraffe Backpack');" id="button">Add to Cart</button></div>
         </div>
+        <input type="submit">
         </form>
 
-        <a href="cart.html">Visit the Cart</a>
+
     </body>
 </html>
