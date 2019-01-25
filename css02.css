@@ -23,7 +23,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-    opacity: 0.5;
+    background-color: white;
 }
 
 #button {
