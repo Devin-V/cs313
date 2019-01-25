@@ -18,7 +18,7 @@ $_SESSION['items']=$list;
         <form>
         <div class="gallery">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxCRpplAK1KUET2NqrEOCGskBpARJrRdr9M2vXs3qz7CNVKmC" width="320" height="300">
-            <div class="desc"><p>Grey Backpack With Stripes<br> Select the amount you wish to purchase 0-9</p><br><input type="number" name="quantity" min="0" max="9"></div>
+            <div class="desc"><p>Grey Backpack With Stripes<br> Select the amount you wish to purchase 0-9</p><input type="number" name="quantity" min="0" max="9"></div>
         </div>
         <div class="gallery">
             <img src="https://cdn.shopify.com/s/files/1/0851/3262/products/School_Backpack_Heavyweight_Ochre-01_1024x1024.jpg?v=1533162547" width="320" height="300"> 
