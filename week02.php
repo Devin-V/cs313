@@ -48,13 +48,13 @@
     }
 ?>
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
     <head>
         <title>Backpack Store</title>
         <link rel="stylesheet" type="text/css" href="css02.css">
     </head>
-    <body onload="deleteCookies();">
+    <body onload="deleteCookies();"> -->
         <img src="https://hdwallsource.com/img/2018/6/dakine-backpack-wallpaper-62886-64892-hd-wallpapers.jpg" id="bg" alt="">
         <br><br>
         <form>
@@ -93,5 +93,5 @@
         </form>
 
         <a href="cart.html">Visit the Cart</a>
-    </body>
-</html>
+<!--    </body>
+</html> -->
