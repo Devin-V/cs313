@@ -60,7 +60,7 @@ $_SESSION['items']=$list;
             <img src="https://d1wwyfhxuarwk4.cloudfront.net/images/products/common/white/large/4584-w_personalized-kids-backpack-giraffe.jpg" width="320" height="300">
             <div class="desc"><p>Giraffe Backpack</p><br><button onclick="addItem('Giraffe Backpack');" id="button">Add to Cart</button></div>
         </div>
-        <input type="submit">
+        <input type="submit" id="button">
         </form>
 
 
