@@ -10,7 +10,19 @@ $_SESSION['items']=$list;
         <title>Backpack Store</title>
         <link rel="stylesheet" type="text/css" href="css02.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="week02.js"></script>
+        <script>
+            function addItem(item) {
+                $.ajax({
+                    url: "phpFunctions.php",
+                    type: "post",
+                    data: {"push" : item},
+                    success: function(response) { console.log(response); }
+                })
+
+            }
+        </script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="week02.js"></script>-->
     </head>
     <body onload="deleteCookies();">
         <img src="https://hdwallsource.com/img/2018/6/dakine-backpack-wallpaper-62886-64892-hd-wallpapers.jpg" id="bg" alt="">
