@@ -6,7 +6,13 @@ function addItem(item){
     })
 }
 
-
+function onLoad(){
+    $.ajax({
+        url : "phpFunctions.php",
+        type : "POST",
+        data : {functionname : 'print'}
+    })
+}
 
 
 
