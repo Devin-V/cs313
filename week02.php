@@ -1,60 +1,15 @@
 <?php
     // Start Session
     session_start();
-
-    // Declare Cart
-    if (! isset ( $_SESSION ['cart'] )) {
-        $_SESSION ['cart'] = array ();
-    }
-
-    // Total list of items
-    $items = array (
-        '001' => array (
-            'name' => 'Grey Backpack With Stripes',
-            'price' => 24.99
-        ),
-        '002' => array (
-            'name' => 'Tan Plain Backpack',
-            'price' => 25.99
-        ),
-        '003' => array (
-            'name' => 'Rainbow Backpack',
-            'price' => 26.99
-        ),
-        '004' => array (
-            'name' => 'Black Adidas Backpack',
-            'price' => 27.99
-        ),
-        '005' => array (
-            'name' => 'Plain Grey Backpack',
-            'price' => 28.99
-        ),
-        '006' => array (
-            'name' => 'Tan Backpack With Stripes',
-            'price' => 29.99
-        ),
-        '007' => array (
-            'name' => 'Pattern Backpack',
-            'price' => 30.99
-        ),
-        '008' => array (
-            'name' => 'Giraffe Backpack',
-            'price' => 99.99
-        ),
-    )
-    // Add items to cart
-    if (isset ($_POST ["buy"] )) {
-        $_SESSION ['cart'][] = $_POST["buy"];
-    }
 ?>
 
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Backpack Store</title>
         <link rel="stylesheet" type="text/css" href="css02.css">
     </head>
-    <body onload="deleteCookies();"> -->
+    <body onload="deleteCookies();">
         <img src="https://hdwallsource.com/img/2018/6/dakine-backpack-wallpaper-62886-64892-hd-wallpapers.jpg" id="bg" alt="">
         <br><br>
         <form>
@@ -93,5 +48,5 @@
         </form>
 
         <a href="cart.html">Visit the Cart</a>
-<!--    </body>
-</html> -->
+    </body>
+</html>
