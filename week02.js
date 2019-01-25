@@ -1,4 +1,4 @@
-function addItem(item){
+/*function addItem(item){
     $.ajax({
         url : "phpFunctions.php",
         type : "POST",
@@ -12,7 +12,7 @@ function onLoad(){
         type : "POST",
         data : {functionname : 'print'}
     })
-}
+}*/
 
 
 
