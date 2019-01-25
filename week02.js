@@ -1,8 +1,8 @@
-/*function addItem(item){
+function addItem(item){
     $.ajax({
         url : "phpFunctions.php",
         type : "POST",
-        data : {functionname : 'push', arguments: [item]}
+        data : {'push' : item}
     })
 }
 
@@ -10,9 +10,9 @@ function onLoad(){
     $.ajax({
         url : "phpFunctions.php",
         type : "POST",
-        data : {functionname : 'print'}
+        data : {'print':''}
     })
-}*/
+}
 
 
 
