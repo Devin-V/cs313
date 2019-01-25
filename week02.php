@@ -48,7 +48,7 @@ $_SESSION['items']=$list;
             <img src="https://d1wwyfhxuarwk4.cloudfront.net/images/products/common/white/large/4584-w_personalized-kids-backpack-giraffe.jpg" width="320" height="300">
             <div class="desc"><p>Giraffe Backpack<br> Select the amount you wish to purchase 0-9</p><br><input type="number" name="quantity" min="0" max="9"></div>
         </div>
-        <input type="submit" id="button">
+        <br><input type="submit" id="button">
         </form>
 
 
