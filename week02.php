@@ -1,37 +1,13 @@
-<?php
-    // Start Session
-    session_start();
-    (int) $_SESSION['Grey_Backpack_With_Stripes'] = "0";
-    (int) $_SESSION['Tan Plain Backpack'] = "0";
-    (int) $_SESSION['Rainbow Backpack'] = "0";
-    (int) $_SESSION['Black Adidas Backpack'] = "0";
-    (int) $_SESSION['Plain Grey Backpack'] = "0";
-    (int) $_SESSION['Tan Backpack With Straps'] = "0";
-    (int) $_SESSION['Pattern Backpack'] = "0";
-    (int) $_SESSION['Giraffe Backpack'] = "0";
-
-    function add1(){
-        $Grey_Backpack_With_Stripes + 1;
-        echo "hello";
-    }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Backpack Store</title>
         <link rel="stylesheet" type="text/css" href="css02.css">
-        <script>
-            function add01(){
-                var result = "<?php add1():?>";
-                alert(result);
-            }
-        </script>
+        <script src="week02.js"></script>
     </head>
     <body onload="deleteCookies();">
         <img src="https://hdwallsource.com/img/2018/6/dakine-backpack-wallpaper-62886-64892-hd-wallpapers.jpg" id="bg" alt="">
         <br><br>
-        <form action="cart.php" method="post">
         <div class="gallery">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxCRpplAK1KUET2NqrEOCGskBpARJrRdr9M2vXs3qz7CNVKmC" width="320" height="300">
             <div class="desc"><p>Grey Backpack With Stripes</p><button onclick="add01();" id="button">Add to Cart</button></div>
@@ -64,7 +40,6 @@
             <img src="https://d1wwyfhxuarwk4.cloudfront.net/images/products/common/white/large/4584-w_personalized-kids-backpack-giraffe.jpg" width="320" height="300">
             <div class="desc"><p>Giraffe Backpack</p><br><button onclick="addItem('Giraffe Backpack');" id="button">Add to Cart</button></div>
         </div>
-        <input type="submit" value="Continue to Cart">
-        </form>
+        <a href="cart.html">Click here to go to cart</a>
     </body>
 </html>
