@@ -1,28 +1,4 @@
-function addItem(item){
-    $.ajax({
-        url : "phpFunctions.php",
-        type : "POST",
-        data : {'push' : item}
-    })
-}
-
-function onLoad(){
-    $.ajax({
-        url : "phpFunctions.php",
-        type : "POST",
-        data : {'print':''}
-    })
-}
-
-
-
-
-
-
-
-
-
-/*var list = [];
+var list = [];
 
 function addItem(item){
     list.push(item);
@@ -53,4 +29,4 @@ function onLoad(){
         document.getElementById("container").appendChild(node);
         console.log(list2[i]);
     }
-}*/
+}
