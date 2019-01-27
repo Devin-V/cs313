@@ -3,12 +3,6 @@
     $list = $_POST["list"];
     $_SESSION['stored'] = $list;
     $list2 = $_SESSION['stored'];
-    $delete = $_POST["item to delete"];
-    for ($x = 0; $x < count($list2); $x++){
-        echo $list2[$x}];
-        echo "<br>";
-    }
-    unset($list[$delete]);
 ?>
 
 <!DOCTYPE html>
@@ -28,9 +22,8 @@
             }
             ?>
         </ol>
-        <form name="form" action="" method="POST">
-            <input type="number" name="item to delete" id="deleteNum" min="1" max="8">
-            <input type="submit" value="Delete Item">
+        <form name="form" action="week02.php" method="POST">
+            <input type="submit" value="Remove Items">
         </form>
     </body>
 </html>
