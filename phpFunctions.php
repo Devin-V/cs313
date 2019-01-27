@@ -23,6 +23,7 @@
             ?>
         </ol>
         <form name="form" action="week02.php" method="POST">
+            <input type="submit" value="Add More Items">
             <input type="submit" value="Remove Items">
         </form>
     </body>
