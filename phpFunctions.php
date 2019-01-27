@@ -21,8 +21,6 @@
         <form name="form" action="" method="get">
             <input type="number" name="item to delete" id="deleteNum" min="1" max="8">
         </form>
-            <?php
-                echo "<p>$_GET['deleteNum']</p>";
-            ?>
+
     </body>
 </html>
