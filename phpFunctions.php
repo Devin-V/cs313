@@ -4,6 +4,7 @@
     $_SESSION['stored'] = $list;
     $list2 = $_SESSION['stored'];
     $delete = $_POST["item to delete"];
+    echo $delete;
     unset($list[$delete]);
 ?>
 
@@ -23,7 +24,7 @@
             }
             ?>
         </ol>
-        <form name="form" action="phpFunctions.php" method="POST">
+        <form name="form" action="" method="POST">
             <input type="number" name="item to delete" id="deleteNum" min="1" max="8">
             <input type="submit" value="Delete Item">
         </form>
