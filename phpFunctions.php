@@ -1,8 +1,8 @@
 <?php
     session_start();
-    $list = htmlspecialchars($_POST["list"]);
+    $list = $_POST["list"];
     $_SESSION['stored'] = $list;
-    $list2 = htmlspecialchars($_SESSION['stored']);
+    $list2 = $_SESSION['stored'];
 ?>
 
 <!DOCTYPE html>
