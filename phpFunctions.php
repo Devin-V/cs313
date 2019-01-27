@@ -15,7 +15,7 @@
     </head>
     <body>
         <?php
-        echo "<p>list $list<br>session $_SESSION['stored']<br>list2 $list2<br>delete $delete<br>";
+        echo "<p>list $list<br>session $_SESSION['stored']<br>list2 $list2<br>delete $delete<br></p>";
         ?>
         <h1>Contents of Cart</h1>
         <ol>
