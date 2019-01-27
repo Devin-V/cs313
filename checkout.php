@@ -17,6 +17,6 @@
             <input type="text" name="lastname"><br>
             Billing Address:<br>
             <input type="text" name="address"><br>
-            <input type="submit" value="Complete Purchase">
+            <input class="button" type="submit" value="Complete Purchase">
     </body>
 </html>

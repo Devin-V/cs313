@@ -44,7 +44,7 @@
             <img src="https://d1wwyfhxuarwk4.cloudfront.net/images/products/common/white/large/4584-w_personalized-kids-backpack-giraffe.jpg" width="320" height="300">
             <div class="checkbox"><input type="checkbox" name="list[]" id="008" value="Giraffe Backpack"><label for="008">Business Casual Giraffe Backpack<br></label></div>
         </div>
-        <input type="submit" value="Checkout">
+        <input class="button" type="submit" value="Checkout">
         </form>
     </body>
 </html>

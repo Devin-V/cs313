@@ -32,7 +32,7 @@
             it will be shipped to: <?=$address ?>
         </p>
         <form name="form" method="POST" action="week02.php">
-            <input type="submit" value="Continue Shopping">
+            <input class="button" type="submit" value="Continue Shopping">
         </form>
     </body>
 </html>
