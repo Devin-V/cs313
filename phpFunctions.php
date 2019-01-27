@@ -1,7 +1,7 @@
 <?php
     $list = $_POST["list"];
     $delete = $_POST["item to delete"];
-    //\unset($list[$delete]);
+    unset($list[$delete]);
 ?>
 
 <!DOCTYPE html>
