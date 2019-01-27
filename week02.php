@@ -18,19 +18,19 @@
         </div>
         <div class="gallery">
             <img src="https://cdn.shopify.com/s/files/1/0851/3262/products/School_Backpack_Heavyweight_Ochre-01_1024x1024.jpg?v=1533162547" width="320" height="300"> 
-            <input type="checkbox" name="list[]" id="002" value="Tan Plain Backpack"><label>Tan Plain Backpack<br></label>
+            <input type="checkbox" name="list[]" id="002" value="Tan Plain Backpack"><label>Durable Tan Plain Backpack</label>
         </div>
         <div class="gallery">
             <img src="https://www.pbteen.com/ptimgs/ab/images/dp/wcm/201849/0132/gear-up-ombre-backpack-c.jpg" width="320" height="300">
-            <input type="checkbox" name="list[]" id="003" value="Rainbow Backpack"><label>Rainbow Backpack<br></label>
+            <input type="checkbox" name="list[]" id="003" value="Rainbow Backpack"><label>Multicolored Rainbow Backpack<br></label>
         </div>
         <div class="gallery">
             <img src="https://s7d9.scene7.com/is/image/zumiez/cat_max/adidas-Santiago-Black-Mini-Backpack-_301422.jpg" width="320" height="300">
-            <input type="checkbox" name="list[]" id="004" value="Black Adidas Backpack"><label>Black Adidas Backpack<br></label>
+            <input type="checkbox" name="list[]" id="004" value="Black Adidas Backpack"><label>Black and White Adidas Backpack<br></label>
         </div>
         <div class="gallery">
             <img src="https://s7d9.scene7.com/is/image/zumiez/cat_max/Herschel-Supply-Co.-Little-America-Raven-Crosshatch-25L-Backpack-_280269.jpg" width="320" height="300">
-            <input type="checkbox" name="list[]" id="005" value="Plain Grey Backpack"><label>Plain Grey Backpack<br></label>
+            <input type="checkbox" name="list[]" id="005" value="Plain Grey Backpack"><label>Plain Grey Backpack With Straps<br></label>
         </div>
         <div class="gallery">
             <img src="https://cdn.shopify.com/s/files/1/0183/7917/products/canvas-rucksack-backpack-for-school-outdoor-front_grande.jpg?v=1472458352" width="320" height="300">
@@ -38,11 +38,11 @@
         </div>
         <div class="gallery">
             <img src="https://assets.academy.com/mgen/40/10618640.jpg?is=150,150?wid=250&hei=250" width="320" height="300">
-            <input type="checkbox" name="list[]" id="007" value="Pattern Backpack"><label>Pattern Backpack<br></label>
+            <input type="checkbox" name="list[]" id="007" value="Pattern Backpack"><label>Blue and White Pattern Backpack<br></label>
         </div>
         <div class="gallery">
             <img src="https://d1wwyfhxuarwk4.cloudfront.net/images/products/common/white/large/4584-w_personalized-kids-backpack-giraffe.jpg" width="320" height="300">
-            <input type="checkbox" name="list[]" id="008" value="Giraffe Backpack"><label>Giraffe Backpack<br></label>
+            <input type="checkbox" name="list[]" id="008" value="Giraffe Backpack"><label>Business Casual Giraffe Backpack<br></label>
         </div>
         <input type="submit" value="Checkout">
         </form>
