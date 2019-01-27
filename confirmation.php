@@ -14,7 +14,7 @@
     <body>
         <h1>Thank you for your purchase</h1>
 
-        <p>Dear <?=$fName " " $lName ?></p>
+
         <p> Thank you for purchasing
             <ol>
                 <?php
@@ -25,6 +25,6 @@
                     }
                 ?>
             </ol>
-            it will be shipped to: <?=$address ?></p>
+        </p>
     </body>
 </html>
