@@ -4,7 +4,10 @@
     $_SESSION['stored'] = $list;
     $list2 = $_SESSION['stored'];
     $delete = $_POST["item to delete"];
-    echo $list2;
+    for ($x = 0; $x < count($list2); $x++){
+        echo $list2[$x}];
+        echo "<br>";
+    }
     unset($list[$delete]);
 ?>
 
