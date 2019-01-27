@@ -1,5 +1,7 @@
 <?php
     $list = $_POST["list"];
+    $delete = $_POST["item to delete"];
+    \unset($list[$delete]);
 ?>
 
 <!DOCTYPE html>
@@ -18,13 +20,9 @@
             }
             ?>
         </ol>
-        <form name="form" action="" method="get">
+        <form name="form" action="phpFunctions.php" method="POST">
             <input type="number" name="item to delete" id="deleteNum" min="1" max="8">
             <input type="submit" value="Delete Item">
         </form>
-            <?php
-                $numz = $_GET['item to delete'];
-                echo "<p>$numz</p>";
-            ?>
     </body>
 </html>
