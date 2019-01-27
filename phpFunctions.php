@@ -4,7 +4,7 @@
     $_SESSION['stored'] = $list;
     $list2 = $_SESSION['stored'];
     $delete = $_POST["item to delete"];
-    echo $delete;
+    echo $list2;
     unset($list[$delete]);
 ?>
 
@@ -14,9 +14,7 @@
         <title>Cart</title>
     </head>
     <body>
-        <?php
-        echo "<p>list $list<br>session $_SESSION['stored']<br>list2 $list2<br>delete $delete<br></p>";
-        ?>
+
         <h1>Contents of Cart</h1>
         <ol>
             <?php
