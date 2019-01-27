@@ -9,7 +9,7 @@
 }
 
 .checkbox {
-    display: none;
+    opacity: 0;
 }
 
 .checkbox label::before{
