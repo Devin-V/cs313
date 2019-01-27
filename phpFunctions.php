@@ -1,11 +1,7 @@
+<!DOCTYPE html>
 <?php
     $list = $_POST["list"];
-
-
-
 ?>
-
-<!DOCTYPE html>
 <html>
     <head>
         <title>Cart</title>
