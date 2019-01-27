@@ -1,9 +1,9 @@
 <?php
     session_start();
-    $fName = $_POST['firstname'];
-    $lName = $_POST['lastname'];
-    $address = $_POST['address'];
-    $list3 = $_SESSION['stored'];
+    $fName = htmlspecialchars($_POST['firstname']);
+    $lName = htmlspecialchars($_POST['lastname']);
+    $address = htmlspecialchars($_POST['address']);
+    $list3 = htmlspecialchars($_SESSION['stored']);
 ?>
 
 <!DOCTYPE html>
