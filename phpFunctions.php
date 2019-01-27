@@ -1,5 +1,8 @@
 <?php
+    session_start();
     $list = $_POST["list"];
+    $_SESSION['stored'] = $list;
+    $list2 = $_SESSION['stored'];
     $delete = $_POST["item to delete"];
     unset($list[$delete]);
 ?>
