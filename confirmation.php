@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css02.css">
     </head>
     <body>
+    <img src="https://hdwallsource.com/img/2018/6/dakine-backpack-wallpaper-62886-64892-hd-wallpapers.jpg" id="bg" alt="">
         <h1>Thank you for your purchase</h1>
 
         <?php
