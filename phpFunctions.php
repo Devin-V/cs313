@@ -11,10 +11,10 @@
         <h1>Contents of Cart</h1>
         <ul>
             <?php
-            foreach ($list as $item)
+            foreach ($list as $lists)
             {
-                $items = $list;
-                echo "<li><p>$items</p></li>";
+                $cart = htmlspecialchars($lists);
+                echo "<li><p>$cart</p></li>";
             }
             ?>
             </ul>
