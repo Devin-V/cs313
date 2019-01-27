@@ -16,7 +16,7 @@
         <h1>Contents of Cart</h1>
         <ol>
             <?php
-            foreach ($list as $lists)
+            foreach ($list2 as $lists)
             {
                 $cart = htmlspecialchars($lists);
                 echo "<li><p>$cart</p></li>";
