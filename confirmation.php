@@ -10,6 +10,7 @@
 <html>
     <head>
         <title>Confirmation</title>
+        <link rel="stylesheet" type="text/css" href="css02.css">
     </head>
     <body>
         <h1>Thank you for your purchase</h1>
@@ -27,6 +28,10 @@
                     }
                 ?>
             </ol>
-            it will be shipped to: <?=$address ?></p>
+            it will be shipped to: <?=$address ?>
+        </p>
+        <form name="form" method="POST" action="week02.php">
+            <input type="submit" value="Continue Shopping">
+        </form>
     </body>
 </html>

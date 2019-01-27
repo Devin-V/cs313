@@ -6,6 +6,7 @@
 <html>
     <head>
         <title>Checkout</title>
+        <link rel="stylesheet" type="text/css" href="css02.css">
     </head>
     <body>
         <form name="form" method="POST" action="confirmation.php">

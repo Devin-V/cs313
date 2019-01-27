@@ -9,6 +9,7 @@
 <html>
     <head>
         <title>Cart</title>
+        <link rel="stylesheet" type="text/css" href="css02.css">
     </head>
     <body>
 
