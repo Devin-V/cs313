@@ -19,6 +19,10 @@ div.gallery {
     width: 180px;
 }
 
+#button1 {
+    clear: both;
+}
+
 div.gallery img {
     width: 100%;
     height: 240px;
