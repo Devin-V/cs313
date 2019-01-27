@@ -14,7 +14,9 @@
     <body>
         <h1>Thank you for your purchase</h1>
 
-        <p>Dear <?php echo $fName " " $lName ?></p>
+        <?php
+        echo "<p>Dear $fName $lName</p>";
+        ?>
         <p> Thank you for purchasing
             <ol>
                 <?php
