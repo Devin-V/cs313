@@ -9,7 +9,7 @@
     </head>
     <body>
         <h1>Contents of Cart</h1>
-        <ul>
+        <ol>
             <?php
             foreach ($list as $lists)
             {
@@ -17,6 +17,6 @@
                 echo "<li><p>$cart</p></li>";
             }
             ?>
-            </ul>
+            </ol>
     </body>
 </html>
