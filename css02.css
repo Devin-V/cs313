@@ -20,7 +20,7 @@ div.gallery {
 }
 
 #button1 {
-    clear: both;
+    float: left;
 }
 
 div.gallery img {
