@@ -17,6 +17,12 @@
                 echo "<li><p>$cart</p></li>";
             }
             ?>
-            </ol>
+        </ol>
+        <?php
+        $size = sizeof($list);
+        ?>
+        <form name="form" action="" method="get">
+            <input type="number" name="item to delete" min="1" max="<?=$size ?>>">
+        </form>
     </body>
 </html>
