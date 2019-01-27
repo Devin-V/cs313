@@ -49,7 +49,7 @@
             <!--<div class="desc"><p>Giraffe Backpack</p><br><button onclick="addItem('Giraffe Backpack');" id="button">Add to Cart</button></div> -->
             <input type="checkbox" name="list[]" id="008" value="Giraffe Backpack"><label>Giraffe Backpack<br></label>
         </div>
-        <a href="cart.html">Click here to go to cart</a>
+        <input type="submit" value="Checkout">
         </form>
     </body>
 </html>
