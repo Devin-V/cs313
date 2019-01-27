@@ -1,10 +1,17 @@
 <?php
+    session_start();
 
-function push(item){
-    array_push($list, item);
-}
 
-function print(){
-    print_r($list);
-}
+
+
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+    </head>
+    <body>
+        
+    </body>
+</html>
