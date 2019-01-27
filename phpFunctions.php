@@ -26,5 +26,8 @@
             <input type="submit" value="Add More Items">
             <input type="submit" value="Remove Items">
         </form>
+        <form name="form" action="checkout.php" method="POST">
+            <input type="submit" value="Continue to Checkout">
+        </form>
     </body>
 </html>
