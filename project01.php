@@ -14,6 +14,7 @@ try
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo 'running';
 }
 catch (PDOException $ex)
 {
@@ -21,10 +22,9 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT price, item FROM saledata') as $row){
-    echo 'price: ' . $row['price'];
-    echo ' item: ' . $row['item'];
-    echo '<br/>';
+$statement = $db->query('SELECT price, item FROM saledata');
+while ($row = $statment->fetch(PDO::FETCH_ASSOC)){
+    echo 'price: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
 }
 ?>
 
