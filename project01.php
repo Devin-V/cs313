@@ -25,3 +25,13 @@ foreach ($db->query('SELECT price, description FROM saledata') as $row){
     echo '<br/>';
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>project01</title>
+    </head>
+    <body>
+        <p>here i am </p>
+    </body>
+</html>
