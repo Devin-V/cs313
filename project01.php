@@ -20,6 +20,12 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
+
+foreach ($db->query('SELECT price, item FROM saledata') as $row){
+    echo 'price: ' . $row['price'];
+    echo ' item: ' . $row['item'];
+    echo '<br/>';
+}
 ?>
 
 <!DOCTYPE html>
