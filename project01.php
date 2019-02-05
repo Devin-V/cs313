@@ -30,9 +30,9 @@ catch (PDOException $ex)
     <body>
         <p>here i am </p>
         <?php
-            foreach ($db->query('SELECT price, description FROM saledata') as $row){
+            foreach ($db->query('SELECT price, item FROM saledata') as $row){
                 echo 'price: ' . $row['price'];
-                echo ' description: ' . $row['description'];
+                echo ' item: ' . $row['item'];
                 echo '<br/>';
         }
         ?>
