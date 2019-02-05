@@ -31,6 +31,10 @@ catch (PDOException $ex)
     <body>
         <p>here i am </p>
         <form name="form" method="POST" action="project01-1.php">
+            <input class="checkbox" type="checkbox" name="Salesman" value="person">Sales-person<br>
+            <input class="checkbox" type="checkbox" name="timeofsale" value="timed">Time of sale<br>
+            <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item sold<br>
+            <input class="checkbox" type="checkbox" name="prices" value="price">Price of sold items<br>
             <input class="button" type="submit" value="View Report">
         </form>
     </body>
