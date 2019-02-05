@@ -21,11 +21,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
-$statement = $db->query('SELECT price, item FROM saledata');
-while ($row = $statment->fetch(PDO::FETCH_ASSOC)){
-    echo 'price: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
-}
 ?>
 
 <!DOCTYPE html>
@@ -35,12 +30,6 @@ while ($row = $statment->fetch(PDO::FETCH_ASSOC)){
     </head>
     <body>
         <p>here i am </p>
-        <?php
-            foreach ($db->query('SELECT price, item FROM saledata') as $row){
-                echo 'price: ' . $row['price'];
-                echo ' item: ' . $row['item'];
-                echo '<br/>';
-        }
-        ?>
+
     </body>
 </html>
