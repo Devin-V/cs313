@@ -30,6 +30,8 @@ catch (PDOException $ex)
     </head>
     <body>
         <p>here i am </p>
-
+        <form name="form" method="POST" action="project01-1.php">
+            <input class="button" type="submit" value="View Report">
+        </form>
     </body>
 </html>

@@ -16,12 +16,15 @@ CREATE TABLE public.description(
 CREATE TABLE public.item(
     id SERIAL NOT NULL PRIMARY KEY,
     price INT NOT NULL,
-    description_id INT NOT NULL REFERENCES public.description(id)
+    description_id INT NOT NULL,
+    FOREIGN KEY (description_id) REFERENCES public.description(id)
 );
 
 CREATE TABLE public.saledata(
     id SERIAL NOT NULL PRIMARY KEY,
     person VARCHAR(100) NOT NULL,
-    item INT NOT NULL REFERENCES public.item(id),
-    timed INT NOT NULL REFERENCES public.timed(id)
+    item INT NOT NULL,
+    FOREIGN KEY (item) REFERENCES public.item(id),
+    timed INT NOT NULL,
+    FOREIGN KEY (timed) REFERENCES public.timed(id)
 );
