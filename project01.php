@@ -14,7 +14,6 @@ try
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo 'running';
 }
 catch (PDOException $ex)
 {
@@ -36,7 +35,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
     </head>
     <body>
         <p>here i am </p>
-        <form name="form" method="POST" action="project01-1.php">
+        <form name="form" method="POST" action="project01.php">
             <input class="checkbox" type="checkbox" name="Salesman" value="person">Sales-person<br>
             <input class="checkbox" type="checkbox" name="timeofsale" value="timed">Time of sale<br>
             <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item sold<br>
