@@ -22,7 +22,7 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT * FROM itemdata')as $row)
+foreach ($db->query('SELECT * FROM saledata')as $row)
 {
     echo $row[1] . $row[2] . $row[3];
     echo '<br>';
