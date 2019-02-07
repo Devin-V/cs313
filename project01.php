@@ -52,9 +52,9 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
             <?php
                 foreach ($db->query('SELECT * FROM saledata')as $row) {
                     echo "<tr>";
-                    echo "<td>".$row[ID]."</td>";
-                    echo "<td>".$row[Name]."</td>";
-                    echo "<td>".$row[Title]."</td>";
+                    echo "<td>".$row[1]."</td>";
+                    echo "<td>".$row[2]."</td>";
+                    echo "<td>".$row[3]."</td>";
                     echo "</tr>";
                 }
             ?>
