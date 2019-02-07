@@ -50,6 +50,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                 <td>Title</td>
             </tr>
             <?php
+                if(isset($_POST['Salesman']))
                 foreach ($db->query('SELECT * FROM saledata')as $row) {
                     echo "<tr>";
                     echo "<td>".$row[1]."</td>";
