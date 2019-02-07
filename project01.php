@@ -42,5 +42,23 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
             <input class="checkbox" type="checkbox" name="prices" value="price">Price of sold items<br>
             <input class="button" type="submit" value="View Report">
         </form>
+
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Title</td>
+            </tr>
+            <?php
+                while ($row = $db($query)) {
+                    echo "<tr>";
+                    echo "<td>".$row[ID]."</td>";
+                    echo "<td>".$row[Name]."</td>";
+                    echo "<td>".$row[Title]."</td>";
+                    echo "</tr>";
+                }
+            ?>
+        </table>
+
     </body>
 </html>
