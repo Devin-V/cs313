@@ -50,7 +50,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                 <td>Title</td>
             </tr>
             <?php
-                while ($db->query('SELECT * FROM saledata')as $row) {
+                foreach ($db->query('SELECT * FROM saledata')as $row) {
                     echo "<tr>";
                     echo "<td>".$row[ID]."</td>";
                     echo "<td>".$row[Name]."</td>";
