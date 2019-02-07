@@ -44,11 +44,6 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
         </form>
 
         <table>
-            <tr>
-                <td>ID</td>
-                <td>Name</td>
-                <td>Title</td>
-            </tr>
             <?php
                 if(isset($_POST['Salesman'])){
                 echo "<tr> <td>Salesman</td><td>Item ID</td><td>Time ID</td></tr>";
@@ -61,6 +56,17 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                 }
                 }
             ?>
+            <?php
+                if(isset($_POST['timeofsale'])){
+                    echo "<tr><td>ID</td><td>hour</td><td>min</td><td>day</td><td>month</td><td>year</td></tr>";
+                    foreach ($db->query('SELECT * FROM timed')as $row){
+                        echo "<tr>";
+                        echo "<td>".$row[1]."</td>";
+                        echo "<td>".$row[2]."</td>";
+                        echo "<td>".$row[3]."</td>";
+                        echo "</tr>";
+                    }
+                }
         </table>
 
     </body>
