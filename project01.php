@@ -67,6 +67,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                         echo "</tr>";
                     }
                 }
+            ?>
         </table>
 
     </body>
