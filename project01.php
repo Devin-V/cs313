@@ -50,7 +50,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                 <td>Title</td>
             </tr>
             <?php
-                if(isset($_POST['Salesman']))
+                if(isset($_POST['Salesman'])){
                 echo "<tr> <td>Salesman</td><td>Item ID</td><td>Time ID</td></tr>";
                 foreach ($db->query('SELECT * FROM saledata')as $row) {
                     echo "<tr>";
@@ -58,6 +58,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                     echo "<td>".$row[2]."</td>";
                     echo "<td>".$row[3]."</td>";
                     echo "</tr>";
+                }
                 }
             ?>
         </table>
