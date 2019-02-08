@@ -1,21 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Project01</title>
-</head>
-<body>
-    <div class="topnav">
-        <a class="active" href="project01.php">Home</a>
-        <a href="project01-1.php">Make a Sale</a>
-        <a href="project01-2.php">View Reports</a>
-        <a href="project01-3.php">Manage Employees & Advertisiments</a>
-    </div>
-    <p>This is the homepage</p>
-</body>
-</html>
-
-
 <?php
 try
 {
@@ -53,7 +35,13 @@ catch (PDOException $ex)
     <link rel="stylesheet" type="text/css" href="project01.css">
     </head>
     <body>
-        <form name="form" method="POST" action="project01.php">
+    <div class="topnav">
+        <a class="active" href="project01.php">Home</a>
+        <a href="project01-1.php">Make a Sale</a>
+        <a href="project01-2.php">View Reports</a>
+        <a href="project01-3.php">Manage Employees & Advertisiments</a>
+    </div>
+        <form name="form" method="POST" action="project01-2.php">
             <input class="checkbox" type="checkbox" name="Salesman" value="person">Sales-person<br>
             <input class="checkbox" type="checkbox" name="timeofsale" value="timed">Time of sale<br>
             <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item sold<br>
