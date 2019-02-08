@@ -32,7 +32,7 @@ catch (PDOException $ex)
 <html>
     <head>
     <title>project01</title>
-    <script> function reload(){location.reload();}</script>
+    <script> function reload(){window.location.reload();}</script>
     </head>
     <body>
         <form name="form" method="POST" action="project01.php">
