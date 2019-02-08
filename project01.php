@@ -21,11 +21,11 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT * FROM saledata')as $row)
+/*foreach ($db->query('SELECT * FROM saledata')as $row)
 {
     echo $row[1] . $row[2] . $row[3];
     echo '<br>';
-}
+}*/
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,6 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
     <title>project01</title>
     </head>
     <body>
-        <p>here i am </p>
         <form name="form" method="POST" action="project01.php">
             <input class="checkbox" type="checkbox" name="Salesman" value="person">Sales-person<br>
             <input class="checkbox" type="checkbox" name="timeofsale" value="timed">Time of sale<br>
