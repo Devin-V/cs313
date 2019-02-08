@@ -41,10 +41,10 @@ catch (PDOException $ex)
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
         <form name="form" method="POST" action="project01-2.php">
-            <input class="checkbox" type="checkbox" name="Salesman" value="person">Sales-person<br>
-            <input class="checkbox" type="checkbox" name="timeofsale" value="timed">Time of sale<br>
-            <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item sold<br>
-            <input class="checkbox" type="checkbox" name="prices" value="price">Price of sold items<br>
+            <input class="checkbox" type="checkbox" name="SaleInfo" value="person">Sales-Information<br>
+            <input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br>
+            <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item-description<br>
+            <input class="checkbox" type="checkbox" name="employee" value="price">Employee-Information<br>
             <input class="button" type="submit" value="View Report">
             <input class="button" type="reset" value="Clear Choices">
             <input class="button" type="submit" value="Clear Results">
@@ -52,27 +52,29 @@ catch (PDOException $ex)
 
         <table>
             <?php
-                if(isset($_POST['Salesman'])){
+                if(isset($_POST['SaleInfo'])){
                 echo "<tr> <td>Salesman</td><td>Item ID</td><td>Time ID</td></tr>";
-                foreach ($db->query('SELECT * FROM saledata')as $row) {
+                foreach ($db->query('SELECT * FROM sales')as $row) {
                     echo "<tr>";
                     echo "<td>".$row[1]."</td>";
                     echo "<td>".$row[2]."</td>";
                     echo "<td>".$row[3]."</td>";
+                    echo "<td>".$row[4]."</td>";
+                    echo "<td>".$row[5]."</td>";
+                    echo "<td>".$row[6]."</td>";
+                    echo "<td>".$row[7]."</td>";
                     echo "</tr>";
                 }
                 }
             ?>
             <?php
-                if(isset($_POST['timeofsale'])){
+                if(isset($_POST['adverts'])){
                     echo "<tr><td>hour</td><td>min</td><td>day</td><td>month</td><td>year</td></tr>";
-                    foreach ($db->query('SELECT * FROM timed')as $row){
+                    foreach ($db->query('SELECT * FROM adverts')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
                         echo "<td>".$row[2]."</td>";
                         echo "<td>".$row[3]."</td>";
-                        echo "<td>".$row[4]."</td>";
-                        echo "<td>".$row[5]."</td>";
                         echo "</tr>";
                     }
                 }
@@ -80,21 +82,28 @@ catch (PDOException $ex)
             <?php
                 if(isset($_POST['itemdescription'])){
                     echo "<tr><td>price</td><td>serial number</td></tr>";
-                    foreach ($db->query('SELECT * FROM timed')as $row){
+                    foreach ($db->query('SELECT * FROM items')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
                         echo "<td>".$row[2]."</td>";
+                        echo "<td>".$row[3]."</td>";
+                        echo "<td>".$row[4]."</td>";
                         echo "</tr>";
                     }
                 }
             ?>
             <?php
-                if(isset($_POST['prices'])){
+                if(isset($_POST['employee'])){
                     echo "<tr><td>price</td><td>serial number</td></tr>";
-                    foreach ($db->query('SELECT * FROM timed')as $row){
+                    foreach ($db->query('SELECT * FROM employee')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
                         echo "<td>".$row[2]."</td>";
+                        echo "<td>".$row[3]."</td>";
+                        echo "<td>".$row[4]."</td>";
+                        echo "<td>".$row[5]."</td>";
+                        echo "<td>".$row[6]."</td>";
+                        echo "<td>".$row[7]."</td>";
                         echo "</tr>";
                     }
                 }
