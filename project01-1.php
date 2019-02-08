@@ -6,11 +6,10 @@
 </head>
 <body>
 <div class="topnav">
-        <a class="active" href="project01.php">Home</a>
-        <a href="project01-1.php">Make a Sale</a>
+        <a class="active" href="project01.php">Make a Sale</a>
         <a href="project01-2.php">View Reports</a>
-        <a href="project01-3.php">Manage Employees & Advertisiments</a>
+        <a href="project01-1.php">Manage Employees & Advertisiments</a>
     </div>
-<p> this is the report page</p>
+<p> This is where employee data and advert data will be entered into the database.</p>
 </body>
 </html>
