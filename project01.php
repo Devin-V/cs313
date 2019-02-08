@@ -70,6 +70,28 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                     }
                 }
             ?>
+            <?php
+                if(isset($_POST['itemdescription'])){
+                    echo "<tr><td>price</td><td>serial number</td></tr>";
+                    foreach ($db->query('SELECT * FROM timed')as $row){
+                        echo "<tr>";
+                        echo "<td>".$row[1]."</td>";
+                        echo "<td>".$row[2]."</td>";
+                        echo "</tr>";
+                    }
+                }
+            ?>
+            <?php
+                if(isset($_POST['itemdescription'])){
+                    echo "<tr><td>price</td><td>serial number</td></tr>";
+                    foreach ($db->query('SELECT * FROM timed')as $row){
+                        echo "<tr>";
+                        echo "<td>".$row[1]."</td>";
+                        echo "<td>".$row[2]."</td>";
+                        echo "</tr>";
+                    }
+                }
+            ?>
         </table>
 
     </body>
