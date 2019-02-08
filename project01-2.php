@@ -31,15 +31,15 @@ catch (PDOException $ex)
 <!DOCTYPE html>
 <html>
     <head>
-    <title>View Results</title>
-    <link rel="stylesheet" type="text/css" href="project01.css">
+        <title>View Results</title>
+        <link rel="stylesheet" type="text/css" href="project01.css">
     </head>
     <body>
-    <div class="topnav">
-        <a class="active" href="project01.php">Make a Sale</a>
-        <a href="project01-2.php">View Reports</a>
-        <a href="project01-1.php">Manage Employees & Advertisiments</a>
-    </div>
+        <div class="topnav">
+            <a class="active" href="project01.php">Make a Sale</a>
+            <a href="project01-2.php">View Reports</a>
+            <a href="project01-1.php">Manage Employees & Advertisiments</a>
+        </div>
         <form name="form" method="POST" action="project01-2.php">
             <input class="checkbox" type="checkbox" name="Salesman" value="person">Sales-person<br>
             <input class="checkbox" type="checkbox" name="timeofsale" value="timed">Time of sale<br>
@@ -100,6 +100,5 @@ catch (PDOException $ex)
                 }
             ?>
         </table>
-
     </body>
 </html>
