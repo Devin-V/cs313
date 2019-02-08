@@ -32,7 +32,6 @@ catch (PDOException $ex)
 <html>
     <head>
     <title>project01</title>
-    <script> function reload(){window.location.replace();}</script>
     </head>
     <body>
         <form name="form" method="POST" action="project01.php">
@@ -41,7 +40,7 @@ catch (PDOException $ex)
             <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item sold<br>
             <input class="checkbox" type="checkbox" name="prices" value="price">Price of sold items<br>
             <input class="button" type="submit" value="View Report">
-            <input class="button" type="reset" value="Clear" onClick="reload()">
+            <input class="button" type="reset" type="submit" value="Clear">
         </form>
 
         <table>
