@@ -82,7 +82,7 @@ foreach ($db->query('SELECT * FROM saledata')as $row)
                 }
             ?>
             <?php
-                if(isset($_POST['itemdescription'])){
+                if(isset($_POST['prices'])){
                     echo "<tr><td>price</td><td>serial number</td></tr>";
                     foreach ($db->query('SELECT * FROM timed')as $row){
                         echo "<tr>";
