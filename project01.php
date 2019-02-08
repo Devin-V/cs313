@@ -40,7 +40,8 @@ catch (PDOException $ex)
             <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item sold<br>
             <input class="checkbox" type="checkbox" name="prices" value="price">Price of sold items<br>
             <input class="button" type="submit" value="View Report">
-            <input class="button" type="reset" type="submit" value="Clear">
+            <input class="button" type="reset" value="Clear Choices">
+            <input class="button" type="submit" value="Clear Results">
         </form>
 
         <table>
