@@ -182,7 +182,7 @@ catch (PDOException $ex)
                 if(isset($_POST['adverttype'])){
                     foreach ($db->query('SELECT * FROM adverts')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter]."</td>";
+                        echo "<td>".$row[$counter + 1]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -190,7 +190,7 @@ catch (PDOException $ex)
                 if(isset($_POST['advertprice'])){
                     foreach ($db->query('SELECT * FROM adverts')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter]."</td>";
+                        echo "<td>".$row[$counter + 1]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
