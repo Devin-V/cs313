@@ -41,10 +41,10 @@ catch (PDOException $ex)
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
         <form name="form" method="POST" action="project01-2.php">
-            <input class="checkbox" type="checkbox" name="SaleInfo" value="person">Sales-Information<br>
-            <input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br>
-            <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item-description<br>
-            <input class="checkbox" type="checkbox" name="employee" value="price">Employee-Information<br>
+            <label class="container"><input class="checkbox" type="checkbox" name="SaleInfo" value="person">Sales-Information<br><span class="checkmark"></span></label>
+            <label class="container"><input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br><span class="checkmark"></span></label>
+            <label class="container"><input class="checkbox" type="checkbox" name="itemdescription" value="model">Item-description<br><span class="checkmark"></span></label>
+            <label class="container"><input class="checkbox" type="checkbox" name="employee" value="price">Employee-Information<br><span class="checkmark"></span></label>
 <!--
             <input class="checkbox" type="checkbox" name="timeofsale" value="timeofsales">Time of Sales<br>
             <input class="checkbox" type="checkbox" name="typeofpurchase" value="typeofpurchases">Type of Purchases<br>
