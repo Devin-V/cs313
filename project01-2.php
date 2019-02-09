@@ -286,7 +286,7 @@ catch (PDOException $ex)
             <?php
                 if(isset($_POST['itemdescription'])){
                     echo "<table>";
-                    echo "<tr><th>price</th><th>Current Stock</th><th>Type of Item</th></tr>";
+                    echo "<tr><th>Price of Item Sold</th><th>Current Stock</th><th>Type of Item</th></tr>";
                     foreach ($db->query('SELECT * FROM items')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";

@@ -33,10 +33,6 @@
     background-color: #ddd;
   }
 
-  tr:nth-child(even):hover{
-    background-color: #ddd;
-  }
-
   tr:nth-child(even){
     background-color: #F2F2F2;
   }
