@@ -20,12 +20,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
-/*foreach ($db->query('SELECT * FROM saledata')as $row)
-{
-    echo $row[1] . $row[2] . $row[3];
-    echo '<br>';
-}*/
 ?>
 
 <!DOCTYPE html>
@@ -71,6 +65,7 @@ catch (PDOException $ex)
             <input class="button" type="reset" value="Clear Choices">
             <input class="button" type="submit" value="Clear Results">
         </form>
+        <hr>
         <br><br>
 
             <?php
