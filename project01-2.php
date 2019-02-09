@@ -68,7 +68,6 @@ catch (PDOException $ex)
             <input class="button" type="submit" value="Clear Results">
         </form>
 
-        <table>
             <?php
                 /*$counter = 0;
                 echo "<tr>";
@@ -253,21 +252,24 @@ catch (PDOException $ex)
                 }
 */
                 if(isset($_POST['SaleInfo'])){
-                echo "<tr><td>Time of Purchase</td><td>Type of Transaction</td><td>Type of Customer</td><td>On Sale</td><td>Item ID</td><td>Employee ID</td></tr>";
-                foreach ($db->query('SELECT * FROM sales')as $row) {
-                    echo "<tr>";
-                    echo "<td>".$row[1]."</td>";
-                    echo "<td>".$row[2]."</td>";
-                    echo "<td>".$row[3]."</td>";
-                    echo "<td>".$row[4]."</td>";
-                    echo "<td>".$row[5]."</td>";
-                    echo "<td>".$row[6]."</td>";
-                    echo "</tr>";
-                }
+                    echo "<table>";
+                    echo "<tr><td>Time of Purchase</td><td>Type of Transaction</td><td>Type of Customer</td><td>On Sale</td><td>Item ID</td><td>Employee ID</td></tr>";
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[1]."</td>";
+                        echo "<td>".$row[2]."</td>";
+                        echo "<td>".$row[3]."</td>";
+                        echo "<td>".$row[4]."</td>";
+                        echo "<td>".$row[5]."</td>";
+                        echo "<td>".$row[6]."</td>";
+                        echo "</tr>";
+                    }
+                    echo "</table>";
                 }
             ?>
             <?php
                 if(isset($_POST['adverts'])){
+                    echo "<table>";
                     echo "<tr><td>Type of Advertisement</td><td>Amount Spent</td></tr>";
                     foreach ($db->query('SELECT * FROM adverts')as $row){
                         echo "<tr>";
@@ -275,10 +277,12 @@ catch (PDOException $ex)
                         echo "<td>".$row[2]."</td>";
                         echo "</tr>";
                     }
+                    echo "</table>";
                 }
             ?>
             <?php
                 if(isset($_POST['itemdescription'])){
+                    echo "<table>";
                     echo "<tr><td>price</td><td>Current Stock</td><td>Type of Item</td></tr>";
                     foreach ($db->query('SELECT * FROM items')as $row){
                         echo "<tr>";
@@ -287,10 +291,12 @@ catch (PDOException $ex)
                         echo "<td>".$row[3]."</td>";
                         echo "</tr>";
                     }
+                    echo "</table>";
                 }
             ?>
             <?php
                 if(isset($_POST['employee'])){
+                    echo "<table>";
                     echo "<tr><td>Name</td><td>Postition</td><td>Number of Sales</td><td>Number Of Loyalty Sales</td><td>Phone Number</td><td>Number of Side Projects</td><td>Customer Rating</td></tr>";
                     foreach ($db->query('SELECT * FROM employee')as $row){
                         echo "<tr>";
@@ -303,8 +309,8 @@ catch (PDOException $ex)
                         echo "<td>".$row[7]."</td>";
                         echo "</tr>";
                     }
+                    echo "</table>"
                 }
             ?>
-        </table>
     </body>
 </html>
