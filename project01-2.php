@@ -254,7 +254,7 @@ catch (PDOException $ex)
 */
                 if(isset($_POST['SaleInfo'])){
                     echo "<table>";
-                    echo "<tr><td>Time of Purchase</td><td>Type of Transaction</td><td>Type of Customer</td><td>On Sale</td><td>Item ID</td><td>Employee ID</td></tr>";
+                    echo "<tr><th>Time of Purchase</th><th>Type of Transaction</th><th>Type of Customer</th><th>On Sale</th><th>Item ID</th><th>Employee ID</th></tr>";
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
@@ -272,7 +272,7 @@ catch (PDOException $ex)
             <?php
                 if(isset($_POST['adverts'])){
                     echo "<table>";
-                    echo "<tr><td>Type of Advertisement</td><td>Amount Spent</td></tr>";
+                    echo "<tr><th>Type of Advertisement</th><th>Amount Spent</th></tr>";
                     foreach ($db->query('SELECT * FROM adverts')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
@@ -286,7 +286,7 @@ catch (PDOException $ex)
             <?php
                 if(isset($_POST['itemdescription'])){
                     echo "<table>";
-                    echo "<tr><td>price</td><td>Current Stock</td><td>Type of Item</td></tr>";
+                    echo "<tr><th>price</th><th>Current Stock</th><th>Type of Item</th></tr>";
                     foreach ($db->query('SELECT * FROM items')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
@@ -301,7 +301,7 @@ catch (PDOException $ex)
             <?php
                 if(isset($_POST['employee'])){
                     echo "<table>";
-                    echo "<tr><td>Name</td><td>Postition</td><td>Number of Sales</td><td>Number Of Loyalty Sales</td><td>Phone Number</td><td>Number of Side Projects</td><td>Customer Rating</td></tr>";
+                    echo "<tr><th>Name</th><th>Postition</th><th>Number of Sales</th><th>Number Of Loyalty Sales</th><th>Phone Number</th><th>Number of Side Projects</th><th>Customer Rating</th></tr>";
                     foreach ($db->query('SELECT * FROM employee')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
