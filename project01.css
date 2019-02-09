@@ -64,7 +64,6 @@ table, th, td {
 
 .boxes {
   margin: auto;
-  padding: 40px;
 }
 
 /*Checkboxes styles*/
@@ -104,9 +103,6 @@ input[type="checkbox"]:checked + label:before {
   top: -5px;
   left: 5px;
   border-radius: 0;
-  opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
