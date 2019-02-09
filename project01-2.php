@@ -40,7 +40,7 @@ catch (PDOException $ex)
             <a href="project01-2.php">View Reports</a>
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
-        <br><br>
+        <br>
         <form name="form" method="POST" action="project01-2.php">
             <input class="checkbox" type="checkbox" name="SaleInfo" value="person">Sales-Information<br>
             <input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br>
