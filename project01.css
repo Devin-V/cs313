@@ -93,7 +93,6 @@ input[type="checkbox"] + label:before {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: .6;
   -webkit-transition: all .12s, border-color .08s;
   transition: all .12s, border-color .08s;
 }
@@ -103,6 +102,9 @@ input[type="checkbox"]:checked + label:before {
   top: -5px;
   left: 5px;
   border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
