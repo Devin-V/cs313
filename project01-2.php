@@ -120,12 +120,137 @@ catch (PDOException $ex)
                 if(isset($_POST['employeecust'])){
                     echo "<td>Employee Customer Rating</td>";
                 }
-                for($i = 0; $i <= 16; $i++) {
-                    if(isset($_POST['typeofpurchase'])){
-
-                    }
-                }
                 echo "</tr>";
+
+
+                if(isset($_POST['timeofsale'])){
+                    foreach ($db->query('SELECT timeofpurchase FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['typeofpurchase'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['typeofcustomer'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['onsale'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                     }
+                     $counter++;
+                }
+                if(isset($_POST['priceofsale'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['stockofitem'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['typeofitem'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['adverttype'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['advertprice'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeename'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeetitle'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeesale'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeeloyalty'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeephone'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeeside'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
+                if(isset($_POST['employeecust'])){
+                    foreach ($db->query('SELECT * FROM sales')as $row) {
+                        echo "<tr>";
+                        echo "<td>".$row[$counter]."</td>";
+                        echo "</tr>";
+                    }
+                    $counter++;
+                }
 
                 if(isset($_POST['SaleInfo'])){
                 echo "<tr><td>Time of Purchase</td><td>Type of Transaction</td><td>Type of Customer</td><td>On Sale</td><td>Item ID</td><td>Employee ID</td></tr>";
