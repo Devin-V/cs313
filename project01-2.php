@@ -67,6 +67,7 @@ catch (PDOException $ex)
             <input class="button" type="reset" value="Clear Choices">
             <input class="button" type="submit" value="Clear Results">
         </form>
+        <br><br>
 
             <?php
                 /*$counter = 0;
