@@ -158,7 +158,7 @@ catch (PDOException $ex)
                 if(isset($_POST['priceofsale'])){
                     foreach ($db->query('SELECT price FROM items')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter+ 1]."</td>";
+                        echo "<td>".$row[$counter."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -166,7 +166,7 @@ catch (PDOException $ex)
                 if(isset($_POST['stockofitem'])){
                     foreach ($db->query('SELECT stock FROM items')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -174,7 +174,7 @@ catch (PDOException $ex)
                 if(isset($_POST['typeofitem'])){
                     foreach ($db->query('SELECT typeofitem FROM items')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -182,7 +182,7 @@ catch (PDOException $ex)
                 if(isset($_POST['adverttype'])){
                     foreach ($db->query('SELECT typeofitem FROM adverts')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -190,7 +190,7 @@ catch (PDOException $ex)
                 if(isset($_POST['advertprice'])){
                     foreach ($db->query('SELECT price FROM adverts')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -198,7 +198,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeename'])){
                     foreach ($db->query('SELECT name FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -206,7 +206,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeetitle'])){
                     foreach ($db->query('SELECT title FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -214,7 +214,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeesale'])){
                     foreach ($db->query('SELECT numsales FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -222,7 +222,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeeloyalty'])){
                     foreach ($db->query('SELECT numloyalty FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -230,7 +230,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeephone'])){
                     foreach ($db->query('SELECT phonenumber FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -238,7 +238,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeeside'])){
                     foreach ($db->query('SELECT numprojects FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -246,7 +246,7 @@ catch (PDOException $ex)
                 if(isset($_POST['employeecust'])){
                     foreach ($db->query('SELECT custscore FROM employee')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
