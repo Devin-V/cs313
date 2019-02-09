@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+.mostPage {
+  margin: 35px;
+}
+
 /* Navigation bar Style */
 .topnav {
   background-color: #333;

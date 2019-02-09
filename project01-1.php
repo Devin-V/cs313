@@ -10,6 +10,8 @@
             <a href="project01-2.php">View Reports</a>
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
+        <div class="mostPage">
         <p> This is where employee data and advert data will be entered into the database.</p>
+        </div>
     </body>
 </html>

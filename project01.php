@@ -11,6 +11,8 @@
             <a href="project01-2.php">View Reports</a>
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
+        <div class="mostPage">
         <p>This is where a sale will be made and added to the database</p>
+        </div>
     </body>
 </html>

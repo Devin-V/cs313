@@ -41,6 +41,7 @@ catch (PDOException $ex)
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
         <br>
+        <div class="mostPage">
         <form name="form" method="POST" action="project01-2.php">
         <div class="boxes">
             <input class="checkbox" type="checkbox" id="box-1" name="SaleInfo"><label for="box-1">Sales-Information<br></label>
@@ -320,5 +321,6 @@ catch (PDOException $ex)
                     echo "<br>";
                 }
             ?>
+            </div>
     </body>
 </html>
