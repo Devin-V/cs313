@@ -45,7 +45,7 @@ catch (PDOException $ex)
             <input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br>
             <input class="checkbox" type="checkbox" name="itemdescription" value="model">Item-description<br>
             <input class="checkbox" type="checkbox" name="employee" value="price">Employee-Information<br>
-
+<!--
             <input class="checkbox" type="checkbox" name="timeofsale" value="timeofsales">Time of Sales<br>
             <input class="checkbox" type="checkbox" name="typeofpurchase" value="typeofpurchases">Type of Purchases<br>
             <input class="checkbox" type="checkbox" name="typeofcustomer" value="typeofcustomers">Type of Customers<br>
@@ -62,6 +62,7 @@ catch (PDOException $ex)
             <input class="checkbox" type="checkbox" name="employeephone" value="employeephones">Employee Phone Number<br>
             <input class="checkbox" type="checkbox" name="employeeside" value="employeesides">Employee Side Projects<br>
             <input class="checkbox" type="checkbox" name="employeecust" value="employeecusts">Employee Customer Score<br>
+-->
             <input class="button" type="submit" value="View Report">
             <input class="button" type="reset" value="Clear Choices">
             <input class="button" type="submit" value="Clear Results">
@@ -69,8 +70,7 @@ catch (PDOException $ex)
 
         <table>
             <?php
-                $counter = 0;
-                $header = [];
+                /*$counter = 0;
                 echo "<tr>";
                 if(isset($_POST['timeofsale'])){
                     echo "<td>Time of Purchase</td>";
@@ -251,7 +251,7 @@ catch (PDOException $ex)
                     }
                     $counter++;
                 }
-
+*/
                 if(isset($_POST['SaleInfo'])){
                 echo "<tr><td>Time of Purchase</td><td>Type of Transaction</td><td>Type of Customer</td><td>On Sale</td><td>Item ID</td><td>Employee ID</td></tr>";
                 foreach ($db->query('SELECT * FROM sales')as $row) {
