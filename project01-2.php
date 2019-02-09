@@ -126,7 +126,7 @@ catch (PDOException $ex)
                 if(isset($_POST['timeofsale'])){
                     foreach ($db->query('SELECT timeofpurchase FROM sales')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -134,7 +134,7 @@ catch (PDOException $ex)
                 if(isset($_POST['typeofpurchase'])){
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -142,7 +142,7 @@ catch (PDOException $ex)
                 if(isset($_POST['typeofcustomer'])){
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -150,7 +150,7 @@ catch (PDOException $ex)
                 if(isset($_POST['onsale'])){
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                      }
                      $counter++;
@@ -158,7 +158,7 @@ catch (PDOException $ex)
                 if(isset($_POST['priceofsale'])){
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$row[$counter]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
@@ -180,17 +180,17 @@ catch (PDOException $ex)
                     $counter++;
                 }
                 if(isset($_POST['adverttype'])){
-                    foreach ($db->query('SELECT * FROM adverts')as $row) {
+                    foreach ($db->query('SELECT * FROM adverts')as $column) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$column[$counter + 1]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
                 }
                 if(isset($_POST['advertprice'])){
-                    foreach ($db->query('SELECT * FROM adverts')as $row) {
+                    foreach ($db->query('SELECT * FROM adverts')as $column) {
                         echo "<tr>";
-                        echo "<td>".$row[$counter + 1]."</td>";
+                        echo "<td>".$column[$counter + 1]."</td>";
                         echo "</tr>";
                     }
                     $counter++;
