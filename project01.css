@@ -75,7 +75,6 @@ input[type="checkbox"] + label {
   padding-left: 35px;
   margin-bottom: 20px;
   font: 14px/20px 'Open Sans', Arial, sans-serif;
-  color: #ddd;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -102,7 +101,6 @@ input[type="checkbox"]:checked + label:before {
   top: -5px;
   left: 5px;
   border-radius: 0;
-  opacity: 1;
   border-top-color: transparent;
   border-left-color: transparent;
   -webkit-transform: rotate(45deg);
