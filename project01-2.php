@@ -42,10 +42,10 @@ catch (PDOException $ex)
         </div>
         <br><br>
         <form name="form" method="POST" action="project01-2.php">
-            <input class="checkbox" type="checkbox" id="SaleInfo" name="SaleInfo" value="person">Sales-Information<br>
-            <input class="checkbox" type="checkbox" id="adverts" name="adverts" value="timed">Advertisement-Information<br>
-            <input class="checkbox" type="checkbox" id="itemdescription" name="itemdescription" value="description">Item-description<br>
-            <input class="checkbox" type="checkbox" id="employee" name="employee" value="price">Employee-Information<br>
+            <input class="checkbox" type="checkbox" name="SaleInfo" value="person">Sales-Information<br>
+            <input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br>
+            <input class="checkbox" type="checkbox" name="itemdescription" value="description">Item-description<br>
+            <input class="checkbox" type="checkbox" name="employee" value="price">Employee-Information<br>
 <!--
             <input class="checkbox" type="checkbox" name="timeofsale" value="timeofsales">Time of Sales<br>
             <input class="checkbox" type="checkbox" name="typeofpurchase" value="typeofpurchases">Type of Purchases<br>
@@ -63,7 +63,7 @@ catch (PDOException $ex)
             <input class="checkbox" type="checkbox" name="employeephone" value="employeephones">Employee Phone Number<br>
             <input class="checkbox" type="checkbox" name="employeeside" value="employeesides">Employee Side Projects<br>
             <input class="checkbox" type="checkbox" name="employeecust" value="employeecusts">Employee Customer Score<br>
--->
+-->         <br>
             <input class="button" type="submit" value="View Report">
             <input class="button" type="reset" value="Clear Choices">
             <input class="button" type="submit" value="Clear Results">
