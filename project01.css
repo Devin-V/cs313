@@ -24,12 +24,16 @@
     border-collapse: collapse;
   }
 
-  th {
+  table, th {
     background-color: #4CAF50;
     color: white;
   }
 
   tr:hover {
+    background-color: #ddd;
+  }
+
+  tr:nth-child(even):hover{
     background-color: #ddd;
   }
 
