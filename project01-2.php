@@ -265,6 +265,7 @@ catch (PDOException $ex)
                         echo "</tr>";
                     }
                     echo "</table>";
+                    echo "<br>";
                 }
             ?>
             <?php
@@ -278,6 +279,7 @@ catch (PDOException $ex)
                         echo "</tr>";
                     }
                     echo "</table>";
+                    echo "<br>";
                 }
             ?>
             <?php
@@ -292,6 +294,7 @@ catch (PDOException $ex)
                         echo "</tr>";
                     }
                     echo "</table>";
+                    echo "<br>";
                 }
             ?>
             <?php
@@ -310,6 +313,7 @@ catch (PDOException $ex)
                         echo "</tr>";
                     }
                     echo "</table>";
+                    echo "<br>";
                 }
             ?>
     </body>
