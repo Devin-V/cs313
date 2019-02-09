@@ -40,11 +40,12 @@ catch (PDOException $ex)
             <a href="project01-2.php">View Reports</a>
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
+        <br><br>
         <form name="form" method="POST" action="project01-2.php">
-            <label class="container"><input class="checkbox" type="checkbox" name="SaleInfo" value="person">Sales-Information<br><span class="checkmark"></span></label>
-            <label class="container"><input class="checkbox" type="checkbox" name="adverts" value="timed">Advertisement-Information<br><span class="checkmark"></span></label>
-            <label class="container"><input class="checkbox" type="checkbox" name="itemdescription" value="model">Item-description<br><span class="checkmark"></span></label>
-            <label class="container"><input class="checkbox" type="checkbox" name="employee" value="price">Employee-Information<br><span class="checkmark"></span></label>
+            <div class ="inputGroup"><input class="checkbox" type="checkbox" id="SaleInfo" name="SaleInfo" value="person"><label for="SaleInfo">Sales-Information</label></div>
+            <div class ="inputGroup"><input class="checkbox" type="checkbox" id="adverts" name="adverts" value="timed"><label for="adverts">Advertisement-Information</label></div>
+            <div class ="inputGroup"><input class="checkbox" type="checkbox" id="itemdescription" name="itemdescription" value="description"><label for="itemdescription">Item-description</label></div>
+            <div class ="inputGroup"><input class="checkbox" type="checkbox" id="employee" name="employee" value="price"><label for="employee">Employee-Information</label></div>
 <!--
             <input class="checkbox" type="checkbox" name="timeofsale" value="timeofsales">Time of Sales<br>
             <input class="checkbox" type="checkbox" name="typeofpurchase" value="typeofpurchases">Type of Purchases<br>
