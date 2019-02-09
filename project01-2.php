@@ -40,7 +40,6 @@ catch (PDOException $ex)
             <a href="project01-2.php">View Reports</a>
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
-        <br>
         <div class="mostPage">
         <form name="form" method="POST" action="project01-2.php">
         <div class="boxes">
