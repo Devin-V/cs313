@@ -309,7 +309,7 @@ catch (PDOException $ex)
                         echo "<td>".$row[7]."</td>";
                         echo "</tr>";
                     }
-                    echo "</table>"
+                    echo "</table>";
                 }
             ?>
     </body>
