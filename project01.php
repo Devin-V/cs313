@@ -12,8 +12,9 @@
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
         <div class="mostPage">
+        <!-- This is the form to make a sale -->
         <h1>Input A Sale</h1>
-        <form name="form" method="POST" action="project01.php">
+        <form name="form" method="POST" action="project01-insert.php">
             Type of Payment
             <select name="typeofpurchase">
                 <option value="visa">Visa</option>
