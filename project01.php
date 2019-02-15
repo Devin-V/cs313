@@ -14,19 +14,22 @@
         <div class="mostPage">
         <h1>Input A Sale</h1>
         <form method="POST" action="project01.php">
-            <input type="datetime-local" name="timeofpurchase">
+            Type of Payment
             <select name="typeofpurchase">
                 <option value="visa">Visa</option>
                 <option value="amx">American Express</option>
                 <option value="mastercard">Mastercard</option>
                 <option value="cash">Cash</option>
             </select>
+            Type of Customer
             <select name="typeofcustomer">
                 <option value="standard">Standard</option>
                 <option value="loyalty">Loyalty</option>
-            </select>
+            </select><br>
+            Was The Item On Sale?<br>
             <input type="radio" name="onsale" value="true" checked>Item was not on sale<br>
             <input type="radio" name="onsale" value="false">Item is on sale<br>
+            What Was Sold?
             <select name="item">
                 <option value="roast">Roast</option>
                 <option value="milk">Milk</option>
@@ -39,6 +42,7 @@
                 <option value="action figure">Action Figure</option>
                 <option value="baby blocks">Baby Blocks</option>
             </select>
+            Who Made The Sale?
             <select name="employee">
                 <option value="devin">Devin</option>
                 <option value="dennis">Dennis</option>
@@ -46,7 +50,7 @@
                 <option value="doug">Doug</option>
                 <option value="william">William</option>
                 <option value="sharon">Sharon</option>
-            </select>
+            </select><br>
             <input type="submit" value="Submit Order">
         </div>
     </body>
