@@ -29,7 +29,7 @@
         $statement->bindValue(':employeeSale', $employeeSale);
 
         $statment->execute();
-        echo
+        echo "excecuted";
     }
     catch (Exception $ex)
     {
