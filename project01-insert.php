@@ -60,7 +60,7 @@
     }
 
 // Add to Employee Table 
-    if ($customerType = 'standard'){
+    if ($customerType == 'standard'){
         try{
             $query3 ="UPDATE employee SET numsales=numsales + 1 WHERE name='$employeeSale'";
             $statement3 = $db->prepare($query3);
