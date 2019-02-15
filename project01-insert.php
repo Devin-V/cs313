@@ -44,17 +44,14 @@
         die();
     }
 
-    header("Location: project01.php");
-    die();
-
 // Deduct from Item Table
     try{
-        $query = 'UPDATE items SET stock = stock - 1 WHERE name=$itemSold';
-        $statement = $db->prepare($query);
-        echo "Deduct statement set<br>";
+        $query2 = "UPDATE items SET stock = stock - 1 WHERE name='$itemSold'";
+        $statement2 = $db->prepare($query2);
+        echo "Deduct statement2 set<br>";
 
-        $statement->execute();
-        echo "Deduct Statement Executed<br>"
+        $statement2->execute();
+        echo "Deduct Statement2 Executed<br>"
     }
     catch (Exception $ex)
     {
