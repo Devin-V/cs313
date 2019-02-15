@@ -74,8 +74,7 @@
             echo "ERROR with DB. Details: $ex";
             die();
         }
-    }
-    if ($customerType = 'loyalty'){
+    } else {
         try{
             $query3 ="UPDATE employee SET numloyalty=numloyalty + 1 WHERE name='$employeeSale'";
             $statement3 = $db->prepare($query3);
