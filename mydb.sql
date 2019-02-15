@@ -91,5 +91,7 @@ INSERT INTO items (id, name, price, stock, typeofitem) VALUES (7, 'makeup', 4.75
 INSERT INTO items (id, name, price, stock, typeofitem) VALUES (8, 'hair dryer', 30.25, 105, 'beauty');
 INSERT INTO items (id, name, price, stock, typeofitem) VALUES (9, 'action figure', 27.00, 712, 'toys');
 INSERT INTO items (id, name, price, stock, typeofitem) VALUES (10, 'baby blocks', 20.00, 101, 'toys');
+INSERT INTO sales (id, timeofpurchase, typeofpurchase, typeofcustomer, onsale, item, employee) VALUES (1, '2018-01-08 04:05:06', 'visa', 'standard', 'true', 1, 1);
+INSERT INTO sales (id, timeofpurchase, typeofpurchase, typeofcustomer, onsale, item, employee) VALUES (2, '2018-01-08 04:06:12', 'cash', 'loyalty', 'false', 2, 2);
 
 /*************************************************************/
