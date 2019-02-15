@@ -235,7 +235,7 @@ $db = get_db();
 */
                 if(isset($_POST['SaleInfo'])){
                     echo "<table>";
-                    echo "<tr><th>Time of Purchase</th><th>Type of Transaction</th><th>Type of Customer</th><th>On Sale</th><th>Item ID</th><th>Employee ID</th></tr>";
+                    echo "<tr><th>Time of Purchase</th><th>Type of Transaction</th><th>Type of Customer</th><th>On Sale</th><th>Item</th><th>Employee</th></tr>";
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
@@ -267,7 +267,7 @@ $db = get_db();
             <?php
                 if(isset($_POST['itemdescription'])){
                     echo "<table>";
-                    echo "<tr><th>Price of Item Sold</th><th>Current Stock</th><th>Type of Item</th></tr>";
+                    echo "<tr><th>Type of Item</th><th>Price of Item</th><th>Current Stock</th></tr>";
                     foreach ($db->query('SELECT * FROM items')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
