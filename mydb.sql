@@ -78,3 +78,5 @@ INSERT INTO items (id, price, stock, typeofitem) VALUES (1, 25.99, 30, 'food');
 INSERT INTO items (id, price, stock, typeofitem) VALUES (2, 109.50, 25, 'electronics');
 INSERT INTO sales (id, timeofpurchase, typeofpurchase, typeofcustomer, onsale, item, employee) VALUES (1, '2018-01-08 04:05:06', 'visa', 'standard', 'true', 1, 1);
 INSERT INTO sales (id, timeofpurchase, typeofpurchase, typeofcustomer, onsale, item, employee) VALUES (2, '2018-01-08 04:06:12', 'cash', 'loyalty', 'false', 2, 2);
+
+/*************************************************************/
