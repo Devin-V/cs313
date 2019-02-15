@@ -46,7 +46,7 @@
 
 // Deduct from Item Table
     try{
-        $query2 = "UPDATE items SET stock = stock - 1 WHERE name='$itemSold'";
+        $query2 = "UPDATE items SET stock='stock - 1' WHERE name='$itemSold'";
         $statement2 = $db->prepare($query2);
         echo "Deduct statement2 set<br>";
 
