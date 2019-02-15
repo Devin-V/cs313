@@ -282,7 +282,7 @@ $db = get_db();
             <?php
                 if(isset($_POST['employee'])){
                     echo "<table>";
-                    echo "<tr><th>Name</th><th>Postition</th><th>Number of Sales</th><th>Number Of Loyalty Sales</th><th>Phone Number</th><th>Number of Side Projects</th><th>Customer Rating</th></tr>";
+                    echo "<tr><th>Name</th><th>Postition</th><th>Number of Sales</th><th>Number Of Loyalty Sales</th><th>Phone Number</th><th>Number of Side Projects</th></tr>";
                     foreach ($db->query('SELECT * FROM employee')as $row){
                         echo "<tr>";
                         echo "<td>".$row[1]."</td>";
@@ -291,7 +291,6 @@ $db = get_db();
                         echo "<td>".$row[4]."</td>";
                         echo "<td>".$row[5]."</td>";
                         echo "<td>".$row[6]."</td>";
-                        echo "<td>".$row[7]."</td>";
                         echo "</tr>";
                     }
                     echo "</table>";

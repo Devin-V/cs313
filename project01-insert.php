@@ -60,6 +60,36 @@
     }
 
 // Add to Employee Table 
+    if ($customerType = 'standard'){
+        try{
+            $query3 ="UPDATE employee SET numsales=numsales + 1 WHERE name='$employeeSale'";
+            $statement3 = $db->prepare($query3);
+            echo "Add statement3 set<br>";
+
+            $statement3->execute();
+            echo "Add statement3 Executed<br>";
+        }
+        catch (Exception $ex)
+        {
+            echo "ERROR with DB. Details: $ex";
+            die();
+        }
+    }
+    if ($customerType = 'loyalty'){
+        try{
+            $query3 ="UPDATE employee SET numloyalty=numloyalty + 1 WHERE name='$employeeSale'";
+            $statement3 = $db->prepare($query3);
+            echo "Add statement3.2 set<br>";
+
+            $statement3->execute();
+            echo "Add statement3.2 Executed<br>";
+        }
+        catch (Exception $ex)
+        {
+            echo "ERROR with DB. Details: $ex";
+            die();
+        }
+    }
 
     header("Location: project01.php");
     die();
