@@ -8,25 +8,25 @@
     $itemSold = $_POST['item'];
     $employeeSale = $_POST['employee'];
 
-    echo "Variables Set <br>";
-    echo "timestamp=$timestamp\n";
-    echo "purchaseType=$purchaseType\n";
-    echo "customerType=$customerType\n";
-    echo "onSale=$onSale\n";
-    echo "itemSold=$itemSold\n";
-    echo "employeeSale=$employeeSale\n";
-
+    /*echo "Variables Set <br>";
+    echo "timestamp=$timestamp<br>";
+    echo "purchaseType=$purchaseType<br>";
+    echo "customerType=$customerType<br>";
+    echo "onSale=$onSale<br>";
+    echo "itemSold=$itemSold<br>";
+    echo "employeeSale=$employeeSale<br>";
+*/
 // Connect to DB
     require("dbConnect.php");
     $db = get_db();
-    echo "Connected to Database\n";
+    echo "Connected to Database<br>";
 
 // Add to Sales Table
     try
     {
         $query = 'INSERT INTO sales(timeofpurchase, typeofpurchase, typeofcustomer, onsale, item, employee) VALUES(:timestamp, :purchaseType, :customerType, :onSale, :itemSold, :employeeSale)';
         $statement = $db->prepare($query);
-        echo "Query Setup\n";
+        echo "Query Setup<br>";
 
         $statement->bindValue(':timestamp', $timestamp);
         $statement->bindValue(':purchaseType', $purchaseType);
@@ -35,8 +35,8 @@
         $statement->bindValue(':itemSold', $itemSold);
         $statement->bindValue(':employeeSale', $employeeSale);
 
-        $statment->execute();
-        echo "excecuted\n";
+        $statement->execute();
+        echo "excecuted<br>";
     }
     catch (Exception $ex)
     {

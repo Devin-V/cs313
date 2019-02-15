@@ -29,8 +29,8 @@
                 <option value="loyalty">Loyalty</option>
             </select><br><br>
             Was The Item On Sale?<br>
-            <input type="radio" name="onsale" value="true" checked>Item was not on sale<br>
-            <input type="radio" name="onsale" value="false">Item is on sale<br><br>
+            <input type="radio" name="onsale" value="false" checked>Item was not on sale<br>
+            <input type="radio" name="onsale" value="true">Item is on sale<br><br>
             What Was Sold?
             <select name="item">
                 <option value="roast">Roast</option>
