@@ -56,7 +56,14 @@
         $statement->execute();
         echo "Deduct Statement Executed<br>"
     }
+    catch (Exception $ex)
+    {
+        echo "ERROR with DB. Details: $ex";
+        die();
+    }
 
-// Add to Employee Table   
+// Add to Employee Table 
 
+    header("Location: project01.php");
+    die();
 ?>
