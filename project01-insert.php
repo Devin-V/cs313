@@ -8,9 +8,12 @@
     $itemSold = $_POST['item'];
     $employeeSale = $_POST['employee'];
 
+    echo "Variables Set";
+
 // Connect to DB
     require("dbConnect.php");
     $db = get_db();
+    echo "Connected to Database";
 
 // Add to Sales Table
     try
@@ -26,6 +29,7 @@
         $statement->bindValue(':employeeSale', $employeeSale);
 
         $statment->execute();
+        echo
     }
     catch (Exception $ex)
     {
