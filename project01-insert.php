@@ -48,7 +48,14 @@
     die();
 
 // Deduct from Item Table
+    try{
+        $query = 'UPDATE items SET stock = stock - 1 WHERE name=$itemSold';
+        $statement = $db->prepare($query);
+        echo "Deduct statement set<br>";
 
+        $statement->execute();
+        echo "Deduct Statement Executed<br>"
+    }
 
 // Add to Employee Table   
 

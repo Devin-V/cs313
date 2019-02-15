@@ -17,6 +17,7 @@ $db = get_db();
         </div>
         <div class="mostPage">
             <h1>Generate Reports</h1>
+            <!-- This form Picks what reports to show -->
         <form name="form" method="POST" action="project01-2.php">
         <div class="boxes">
             <input class="checkbox" type="checkbox" id="box-1" name="SaleInfo"><label for="box-1">Sales-Information<br></label>
