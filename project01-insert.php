@@ -51,7 +51,7 @@
         echo "Deduct statement2 set<br>";
 
         $statement2->execute();
-        echo "Deduct Statement2 Executed<br>"
+        echo "Deduct Statement2 Executed<br>";
     }
     catch (Exception $ex)
     {
