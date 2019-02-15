@@ -8,14 +8,6 @@
     $itemSold = $_POST['item'];
     $employeeSale = $_POST['employee'];
 
-    /*echo "Variables Set <br>";
-    echo "timestamp=$timestamp<br>";
-    echo "purchaseType=$purchaseType<br>";
-    echo "customerType=$customerType<br>";
-    echo "onSale=$onSale<br>";
-    echo "itemSold=$itemSold<br>";
-    echo "employeeSale=$employeeSale<br>";
-*/
 // Connect to DB
     require("dbConnect.php");
     $db = get_db();
@@ -44,7 +36,7 @@
         die();
     }
 
-// Deduct from Item Table
+// Deduct Stock from Item Table
     try{
         $query2 = "UPDATE items SET stock=stock - 1 WHERE name='$itemSold'";
         $statement2 = $db->prepare($query2);
@@ -59,7 +51,7 @@
         die();
     }
 
-// Add to Employee Table 
+// Add Sales to Employee Table 
     if ($customerType == 'standard'){
         try{
             $query3 ="UPDATE employee SET numsales=numsales + 1 WHERE name='$employeeSale'";

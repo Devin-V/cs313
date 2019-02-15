@@ -235,9 +235,10 @@ $db = get_db();
 */
                 if(isset($_POST['SaleInfo'])){
                     echo "<table>";
-                    echo "<tr><th>Time of Purchase</th><th>Type of Transaction</th><th>Type of Customer</th><th>On Sale</th><th>Item</th><th>Employee</th></tr>";
+                    echo "<tr><th>Sale Id</th><th>Time of Purchase</th><th>Type of Transaction</th><th>Type of Customer</th><th>On Sale</th><th>Item</th><th>Employee</th></tr>";
                     foreach ($db->query('SELECT * FROM sales')as $row) {
                         echo "<tr>";
+                        echo "<td>".$row[0]."</td>";
                         echo "<td>".$row[1]."</td>";
                         echo "<td>".$row[2]."</td>";
                         echo "<td>".$row[3]."</td>";
