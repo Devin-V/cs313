@@ -138,7 +138,7 @@
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach ($results as $row)){
+        foreach ($results as $row){
             echo "<p>".$row[0]."</p>";
             echo "<p>".$row[1]."</p>";
             echo "<p>".$row[2]."</p>";
