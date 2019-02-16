@@ -28,6 +28,11 @@ body {
   color: black;
 }
 
+/* Form Styles */
+form {
+  border: medium solid black;
+}
+
 /* Table Styles */
 table {
   border-collapse: collapse;

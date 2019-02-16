@@ -13,13 +13,14 @@
     $amountSpent = $_POST['number'];
     $employeeName = $_POST['employee2'];
     $numberProjects = $_POST['number2'];
+    // Subtract Values
 
-// Connect to DB
+// CONNECT to DB
     require("dbConnect.php");
     $db = get_db();
     echo "Connected to Database<br>";
 
-// Add to Sales Table
+// ADD to Sales Table
     if (isset($_POST['employee'])){
         try
         {
@@ -44,7 +45,7 @@
         }
     }
 
-// Deduct Stock from Item Table
+// DEDUCT Stock from Item Table
     if (isset($_POST['employee'])){
         try{
             $query2 = "UPDATE items SET stock=stock - 1 WHERE name='$itemSold'";
@@ -60,7 +61,7 @@
             die();
         }
     }
-// Add Sales to Employee Table 
+// ADD Sales to Employee Table 
     if (isset($_POST['employee'])){
         if ($customerType == 'standard'){
             try{
