@@ -138,7 +138,6 @@
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC)
 
-        $row = $results['item'];
         echo "results= ".results['item']."<br>";
 
         try{
