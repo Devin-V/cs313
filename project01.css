@@ -31,7 +31,8 @@ body {
 /* Form Styles */
 form {
   margin: 5px;
-  border: small solid black;
+  border: solid black;
+  border-width: 2px;
 }
 
 /* Table Styles */
