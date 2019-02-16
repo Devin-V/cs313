@@ -96,7 +96,8 @@
 // ADD amount spent on adverts
     if (isset($_POST['typeofitem'])){
         try{
-            $query4 ="UPDATE adverts SET price=price+$amountSpent WHERE typeofitem='$typeofitem'";
+            //$amountSpent = intval(mixed $amountSpent [, int $base = 10 ]) : int;
+            $query4 ="UPDATE adverts SET price=price+ (intval(mixed $amountSpent[,int$$base=10]):int;) WHERE typeofitem='$typeofitem'";
             $statement4 = $db->prepare($query4);
             echo "Add Statement4 set<br>";
 
