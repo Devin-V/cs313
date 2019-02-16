@@ -23,7 +23,7 @@
                     <option value="toys">Toys</option>
                 </select><br><br>
                 How Much Money Was Spent?
-                <input type="number"><br><br>
+                <input name="number" type="number"><br><br>
                 <input class="button" type="submit" value="Update Adverts">
             </form>
             <h2>Update Employee Side Projects</h2>
@@ -38,7 +38,7 @@
                     <option value="devin">Devin</option>
                 </select><br><br>
                 How Many Side Projects Did They Complete?
-                <input type="number2"><br><br>
+                <input name="number2" type="number"><br><br>
                 <input class="button" type="submit" value="Update Projects">
             </form>
         </div>
