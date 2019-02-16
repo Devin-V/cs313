@@ -135,6 +135,7 @@
         try{
             $test = "SELECT item FROM sales WHERE id=$numDelete";
             $state = $db->query($test);
+            echo "state = $state<br>";
             $query6 = "UPDATE items SET stock=stock +1 WHERE name='$state'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
