@@ -159,7 +159,7 @@
     }
 
 // DEDUCT sales from employee sales after deletion
-    /*if (isset($_POST['numberDelete'])){
+    if (isset($_POST['numberDelete'])){
         try{
             $test2 = "SELECT typeofcustomer FROM sales WHERE id=$numDelete";
             $state2 = $db->prepare($test2);
@@ -202,7 +202,7 @@
                 die();
             }
         }
-    }*/
+    }
 
 // DELETE Sale from sale table
     if (isset($_POST['numberDelete'])){
