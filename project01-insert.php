@@ -96,8 +96,7 @@
 // ADD amount spent on adverts
     if (isset($_POST['typeofitem'])){
         try{
-            //$amountSpent = intval(mixed $amountSpent [, int $base = 10 ]) : int;
-            $query4 ="UPDATE adverts SET price=(price+'$amountSpent') WHERE typeofitem='$typeofitem'";
+            $query4 ="UPDATE adverts SET price=(price+$amountSpent) WHERE typeofitem='$typeofitem'";
             $statement4 = $db->prepare($query4);
             echo "Add Statement4 set<br>";
 
@@ -115,7 +114,7 @@
 // ADD projects done for employees
     if (isset($_POST['employee2'])){
         try{
-            $query5 ="UPDATE employee SET numprojects=(numprojects+'$numberProjects') WHERE name='$employeeName'";
+            $query5 ="UPDATE employee SET numprojects=(numprojects+$numberProjects) WHERE name='$employeeName'";
             $statement5 = $db->prepare($query5);
             echo "Add Statement5 set<br>";
 
