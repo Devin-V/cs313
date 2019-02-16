@@ -133,12 +133,12 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
         try{
-            $test = "SELECT item FROM sales WHERE id=$numDelete";
-            echo "test = $test";
-            $state = $db->prepare($test);
-            $state = execute();
-            echo "state = $state";
-            $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$state'";
+            $state = $db->prepare("SELECT item FROM sales WHERE id=$numDelete");
+            $state->execute();
+            $result = $state->setFetchMode(PDO::FETCH_ASSOC);
+            echo "result=$result<br>";
+
+            $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$result'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
 
@@ -153,7 +153,7 @@
     }
 
 // DEDUCT sales from employee sales after deletion
-    if (isset($_POST['numberDelete'])){
+    /*if (isset($_POST['numberDelete'])){
         try{
             $test2 = "SELECT typeofcustomer FROM sales WHERE id=$numDelete";
             $state2 = $db->prepare($test2);
@@ -196,7 +196,7 @@
                 die();
             }
         }
-    }
+    }*/
 
 // DELETE Sale from sale table
     if (isset($_POST['numberDelete'])){
