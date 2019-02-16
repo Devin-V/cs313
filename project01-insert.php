@@ -133,7 +133,7 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
         try{
-            $test = "SELECT item FROM sales WHERE id=$numDelete";
+            $test = "SELECT items FROM sales WHERE id=$numDelete";
             $query6 = "UPDATE items SET stock=stock +1 WHERE name='$test'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
@@ -159,7 +159,7 @@
             echo "ERROR with DB. Details: $ex";
             die();
         }
-        if ($result2 == 'standard'){
+        if ($test2 == 'standard'){
             try{
                 $query7 ="UPDATE employee SET numsales=numsales - 1 WHERE name='$test2'";
                 $statement7 = $db->prepare($query7);
