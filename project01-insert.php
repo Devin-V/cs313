@@ -135,6 +135,11 @@
         die();
     }
 
+// Delete Sales
+//
+//
+//
+
 // Redirect to Employee Page
     if (isset($_POST['employee2']) || isset($_POST['typeofitem'])){
         header("Location: project01-1.php");

@@ -11,7 +11,6 @@
             <a href="project01-1.php">Manage Employees & Advertisiments</a>
         </div>
         <div class="mostPage">
-            <h1>Update Employee & Advertisement Data</h1>
             <h2>Update Advertisiment Spending</h2>
             <form name="form" method="POST" action="project01-insert.php">
                 What Type Of Product Was Advertised?
