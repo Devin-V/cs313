@@ -137,7 +137,13 @@
             $state->execute();
             $result = $state->setFetchMode(PDO::FETCH_ASSOC);
             echo "result=$result<br>";
-
+        }
+        catch (Exception $ex)
+        {
+            echo "ERROR with DB. Details: $ex";
+            die();
+        }
+        try{
             $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$result'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
