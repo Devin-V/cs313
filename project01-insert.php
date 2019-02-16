@@ -133,8 +133,9 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
 
-        $result = $db->query("SELECT item FROM sales WHERE id='$numDelete'");
-        $row = $result->fetch_assoc();
+        $result = "SELECT item FROM sales WHERE id='$numDelete'";
+        $test = $db->query($result);
+        $row = $test->fetch_assoc();
         echo $row['item'];
 
         try{
