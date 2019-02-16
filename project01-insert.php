@@ -133,10 +133,10 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
         try{
-            $test = "SELECT items FROM sales WHERE id=$numDelete";
+            $test = "SELECT item FROM sales WHERE id=$numDelete";
             $state = $db->query($test);
             echo "test = $test<br>";
-            $query6 = "UPDATE items SET stock=stock +1 WHERE name='$state'";
+            $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$state'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
 
