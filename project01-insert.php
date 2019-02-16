@@ -133,11 +133,10 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
 
-        $db->query('SELECT * FROM sales')as $row;
+        foreach ($db->query('SELECT * FROM sales')as $row){
 
-        echo "Results['item']".$results['item'];
+ //           echo "Results['item']".$results['item'];
  //       echo "results= ".results['item']."<br>";
-        foreach($results as $row){
             echo "Test".$row[0]."test";
             echo "Test".$row[1]."test";
         }
