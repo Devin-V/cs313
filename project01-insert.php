@@ -97,7 +97,7 @@
     if (isset($_POST['typeofitem'])){
         try{
             $query4 ="UPDATE adverts SET price=price + '$amountSpent' WHERE typeofitem='$typeofitem'";
-            $statement4 = $db->prepare(query4);
+            $statement4 = $db->prepare($query4);
             echo "Add Statement4 set<br>";
 
             $statement4->execute();
@@ -115,7 +115,7 @@
     if (isset($_POST['employee2'])){
         try{
             $query5 ="UPDATE employee SET numprojects=numprojects + '$numberProjects' WHERE name='$employeeName'";
-            $statement5 = $db->prepare(query5);
+            $statement5 = $db->prepare($query5);
             echo "Add Statement5 set<br>";
 
             $statement5->execute();
