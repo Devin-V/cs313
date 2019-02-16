@@ -134,7 +134,7 @@
     if (isset($_POST['numberDelete'])){
         try{
             $test = "SELECT items FROM sales WHERE id=$numDelete";
-            $state = $db->prepare($test);
+            $state = $db->query($test);
             $query6 = "UPDATE items SET stock=stock +1 WHERE name='$state'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
@@ -153,9 +153,9 @@
     if (isset($_POST['numberDelete'])){
         try{
             $test2 = "SELECT typeofcustomer FROM sales WHERE id=$numDelete";
-            $state2 = $db->prepare($test2);
+            $state2 = $db->query($test2);
             $test3 = "SELECT name FROM sales WHERE id=$numDelete";
-            $state3 = $db->prepare($test3);
+            $state3 = $db->query($test3);
         }
         catch (Exception $ex)
         {
