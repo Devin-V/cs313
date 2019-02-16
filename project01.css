@@ -30,7 +30,8 @@ body {
 
 /* Form Styles */
 form {
-  border: medium solid black;
+  margin: 5px;
+  border: small solid black;
 }
 
 /* Table Styles */
