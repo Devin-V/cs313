@@ -134,8 +134,10 @@
     if (isset($_POST['numberDelete'])){
         try{
             $test = "SELECT item FROM sales WHERE id=$numDelete";
+            echo "test = $test";
             $state = $db->prepare($test);
             $state = execute();
+            echo "state = $state";
             $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$state'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
