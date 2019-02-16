@@ -133,8 +133,9 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
         try{
-            $item = "SELECT item FROM sales WHERE id='$numDelete'";
-            $query6 = "UPDATE items SET stock=stock +1 WHERE name='$item'";
+            $test = "SELECT item FROM sales WHERE id='$numDelete'";
+            $result = $db->query($test);
+            $query6 = "UPDATE items SET stock=stock +1 WHERE name='$result'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
 
@@ -151,17 +152,19 @@
 // DEDUCT sales from employee sales
     if (isset($_POST['numberDelete'])){
         try{
-            $type = "SELECT typeofcustomer FROM sales WHERE id='$numDelete'";
+            $test2 = "SELECT typeofcustomer FROM sales WHERE id='$numDelete'";
+            $result2 = $db->query($test2);
+            $test3 = "SELECT name FROM sales WHERE id='$numDelete'";
+            $result3 = $db->query($test3);
         }
         catch (Exception $ex)
         {
             echo "ERROR with DB. Details: $ex";
             die();
         }
-        if ($type == 'standard'){
+        if ($result2 == 'standard'){
             try{
-                $name = "SELECT name FROM sales WHERE id='$numDelete'";
-                $query7 ="UPDATE employee SET numsales=numsales - 1 WHERE name='$name'";
+                $query7 ="UPDATE employee SET numsales=numsales - 1 WHERE name='$result3'";
                 $statement7 = $db->prepare($query7);
                 echo "Deduct statement7 set<br>";
 
@@ -175,7 +178,7 @@
             }
         } else {
             try{
-                $query8 ="UPDATE employee SET numloyalty=numloyalty - 1 WHERE name='$name'";
+                $query8 ="UPDATE employee SET numloyalty=numloyalty - 1 WHERE name='$result3'";
                 $statement8 = $db->prepare($query8);
                 echo "Deduct statement8 set<br>";
 
