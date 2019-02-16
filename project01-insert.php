@@ -133,10 +133,7 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
 
-        $queryy = 'SELECT * FROM sales';
-        $stmt = $db->prepare($queryy);
-        $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $db->query('SELECT * FROM sales')as $row;
 
         echo "Results['item']".$results['item'];
  //       echo "results= ".results['item']."<br>";
