@@ -139,13 +139,13 @@
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($results as $row){
-            echo "<p>".$row[0]."</p>";
-            echo "<p>".$row[1]."</p>";
-            echo "<p>".$row[2]."</p>";
-            echo "<p>".$row[3]."</p>";
-            echo "<p>".$row[4]."</p>";
-            echo "<p>".$row[5]."</p>";
-            echo "<p>".$row[6]."</p>";
+            echo "<p>test".$row[0]."</p>";
+            echo "<p>test".$row[1]."</p>";
+            echo "<p>test".$row[2]."</p>";
+            echo "<p>test".$row[3]."</p>";
+            echo "<p>test".$row[4]."</p>";
+            echo "<p>test".$row[5]."</p>";
+            echo "<p>test".$row[6]."</p>";
         }
  //       echo "results= ".results['item']."<br>";
 
