@@ -134,7 +134,8 @@
     if (isset($_POST['numberDelete'])){
         try{
             $test = "SELECT items FROM sales WHERE id=$numDelete";
-            $query6 = "UPDATE items SET stock=stock +1 WHERE name='$test'";
+            $state = $db->prepare($test);
+            $query6 = "UPDATE items SET stock=stock +1 WHERE name='$state'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
 
@@ -152,7 +153,9 @@
     if (isset($_POST['numberDelete'])){
         try{
             $test2 = "SELECT typeofcustomer FROM sales WHERE id=$numDelete";
+            $state2 = $db->prepare($test2);
             $test3 = "SELECT name FROM sales WHERE id=$numDelete";
+            $state3 = $db->prepare($test3);
         }
         catch (Exception $ex)
         {
@@ -161,7 +164,7 @@
         }
         if ($test2 == 'standard'){
             try{
-                $query7 ="UPDATE employee SET numsales=numsales - 1 WHERE name='$test2'";
+                $query7 ="UPDATE employee SET numsales=numsales - 1 WHERE name='$state2'";
                 $statement7 = $db->prepare($query7);
                 echo "Deduct statement7 set<br>";
 
@@ -175,7 +178,7 @@
             }
         } else {
             try{
-                $query8 ="UPDATE employee SET numloyalty=numloyalty - 1 WHERE name='$test3'";
+                $query8 ="UPDATE employee SET numloyalty=numloyalty - 1 WHERE name='$state3'";
                 $statement8 = $db->prepare($query8);
                 echo "Deduct statement8 set<br>";
 
