@@ -138,14 +138,11 @@
         $stmt->execute();
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        echo "numDelete= ".$numDelete;
         foreach ($results as $row){
             echo "<p>test".$row[0]."</p>";
             echo "<p>test".$row[1]."</p>";
             echo "<p>test".$row[2]."</p>";
-            echo "<p>test".$row[3]."</p>";
-            echo "<p>test".$row[4]."</p>";
-            echo "<p>test".$row[5]."</p>";
-            echo "<p>test".$row[6]."</p>";
         }
  //       echo "results= ".results['item']."<br>";
 
