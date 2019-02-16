@@ -133,6 +133,7 @@
 // ADD stock to items after sale deletion
     if (isset($_POST['numberDelete'])){
         try{
+            echo "it's opening";
             $test = "SELECT item FROM sales WHERE id='$numDelete'";
             $result = $db->query($test);
             $query6 = "UPDATE items SET stock=stock +1 WHERE name='$result'";
@@ -149,7 +150,7 @@
         }
     }
 
-// DEDUCT sales from employee sales
+// DEDUCT sales from employee sales after deletion
     if (isset($_POST['numberDelete'])){
         try{
             $test2 = "SELECT typeofcustomer FROM sales WHERE id='$numDelete'";
