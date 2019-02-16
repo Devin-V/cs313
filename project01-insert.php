@@ -134,6 +134,10 @@
     if (isset($_POST['numberDelete'])){
         foreach ($db->query("SELECT item FROM sales WHERE id='$numDelete'")as $row) {
             echo "result=".$result[0]."<br>";
+            echo "result=".$result[1]."<br>";
+            echo "result=".$result[2]."<br>";
+            echo "result=".$result[3]."<br>";
+            echo "result=".$result[4]."<br>";
         };
         echo "result=.$result[0]<br>";
 
