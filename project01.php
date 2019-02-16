@@ -54,7 +54,7 @@
                     <option value="sharon">Sharon</option>
                 </select><br><br>
                 <input class="button" type="submit" value="Submit Order">
-            </form>
+            </form><br>
             <!-- This is the section to remove a sale -->
             <h2>Delete a Sale</h2>
             <!--  Connect to DB -->
