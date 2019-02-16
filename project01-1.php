@@ -13,7 +13,7 @@
         <div class="mostPage">
             <h1>Update Employee & Advertisement Data</h1>
             <h2>Update Advertisiment Spending</h2>
-            <form action="project01-insert.php">
+            <form method="POST" action="project01-insert.php">
                 What Type Of Product Was Advertised?
                 <select name="typeofitem">
                     <option value="food">Food</option>
@@ -27,7 +27,7 @@
                 <input class="button" type="submit" value="Update Adverts">
             </form>
             <h2>Update Employee Side Projects</h2>
-            <form action="project01-insert.php">
+            <form method="POST" action="project01-insert.php">
                 Which Employee?
                 <select name="employee2">
                     <option value="dennis">Dennis</option>
