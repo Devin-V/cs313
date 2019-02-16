@@ -136,8 +136,9 @@
         $queryy = "SELECT * FROM sales WHERE id='$numDelete'";
         $stmt = $db->prepare($queryy);
         $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC)
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        $row = $results['item'];
         echo "results= ".results['item']."<br>";
 
         try{
