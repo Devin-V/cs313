@@ -66,8 +66,8 @@
             <form name="form" method="POST" action="project01-insert.php">
                 Please input the ID of the sale you wish to delete
                 <input name="numberDelete" type="number">
-                <input type="button" value="Delete Sale">
-            </form>
+                <input class="button" type="submit" value="Delete Sale">
+            </form><br><br>
             <!--  Display all sales to user -->
             <?php
                 echo "<table>";
