@@ -14,6 +14,7 @@
     $employeeName = $_POST['employee2'];
     $numberProjects = $_POST['number2'];
     // Subtract Values
+    $numDelete = $_POST['numberDelete'];
 
 // CONNECT to DB
     require("dbConnect.php");
@@ -129,16 +130,88 @@
         }
     }
 
-// Redirect to homepage
-    if (isset($_POST['onsale'])){
-        header("Location: project01.php");
-        die();
+// ADD stock to items after sale deletion
+    if (isset($_POST['numberDelete'])){
+        try{
+            $item = "SELECT item FROM sales WHERE id='$numDelete'";
+            $query6 = "UPDATE items SET stock=stock +1 WHERE name='$item'";
+            $statement6 = $db->prepare($query6);
+            echo "Add Statement6 set<br>";
+
+            $statement6->execute();
+            echo "Add Statement6 Executed";
+        }
+        catch (Exception $ex)
+        {
+            echo "ERROR with DB. Details: $ex";
+            die();
+        }
     }
 
-// Delete Sales
-//
-//
-//
+// DEDUCT sales from employee sales
+    if (isset($_POST['numberDelete'])){
+        try{
+            $type = "SELECT typeofcustomer FROM sales WHERE id='$numDelete'";
+        }
+        catch (Exception $ex)
+        {
+            echo "ERROR with DB. Details: $ex";
+            die();
+        }
+        if ($type == 'standard'){
+            try{
+                $name = "SELECT name FROM sales WHERE id='$numDelete'";
+                $query7 ="UPDATE employee SET numsales=numsales - 1 WHERE name='$name'";
+                $statement7 = $db->prepare($query7);
+                echo "Deduct statement7 set<br>";
+
+                $statement7->execute();
+                echo "Deduct statement7 Executed<br>";
+            }
+            catch (Exception $ex)
+            {
+                echo "ERROR with DB. Details: $ex";
+                die();
+            }
+        } else {
+            try{
+                $query8 ="UPDATE employee SET numloyalty=numloyalty - 1 WHERE name='$name'";
+                $statement8 = $db->prepare($query8);
+                echo "Deduct statement8 set<br>";
+
+                $statement8->execute();
+                echo "Deduct statement8 Executed<br>";
+            }
+            catch (Exception $ex)
+            {
+                echo "ERROR with DB. Details: $ex";
+                die();
+            }
+        }
+    }
+
+// DELETE Sale from sale table
+    if (isset($_POST['numberDelete'])){
+        try{
+            $query9 ="DELETE FROM sales WHERE id='$numDelete'";
+            $statement9 = $db->prepare($query9);
+            echo "Delete Statement9 Set<br>";
+
+            $statement9->execute();
+            echo "Delete Statement9 Set<br>";
+        }
+        catch (Exception $ex)
+        {
+            echo "ERROR with DB. Details: $ex";
+            die();
+        }
+    }
+
+// Redirect to homepage
+if (isset($_POST['onsale']) || isset($_POST['numberDelete'])){
+    header("Location: project01.php");
+    die();
+}
 
 // Redirect to Employee Page
     if (isset($_POST['employee2']) || isset($_POST['typeofitem'])){
