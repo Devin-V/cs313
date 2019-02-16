@@ -137,13 +137,13 @@
 
  //           echo "Results['item']".$results['item'];
  //       echo "results= ".results['item']."<br>";
-            echo "Test".$row[0]."<br>";
-            echo "Test".$row[1]."<br>";
-            echo "Test".$row[2]."<br>";
-            echo "Test".$row[3]."<br>";
-            echo "Test".$row[4]."<br>";
-            echo "Test".$row[5]."<br>";
-            echo "Test".$row[6]."<br>";
+            echo "0".$row[0]."<br>";
+            echo "1".$row[1]."<br>";
+            echo "2".$row[2]."<br>";
+            echo "3".$row[3]."<br>";
+            echo "4".$row[4]."<br>";
+            echo "5".$row[5]."<br>";
+            echo "6".$row[6]."<br>";
         }
 
         try{
