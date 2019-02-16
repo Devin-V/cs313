@@ -138,7 +138,7 @@
         $row = $result->fetch_assoc();
 
         try{
-            $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$row'";
+            $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$row["typeofItem"]'";
             $statement6 = $db->prepare($query6);
             echo "Add Statement6 set<br>";
 
