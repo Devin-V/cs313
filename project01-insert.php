@@ -136,20 +136,20 @@
             $test = $row['item'];
             echo "test= ".$test;
         }
-
         try{
-            $query6 = "UPDATE items SET stock=stock +1 WHERE typeofitem='$test'";
+            $query6 = "UPDATE items SET stock=stock + 1 WHERE name='$test'";
             $statement6 = $db->prepare($query6);
-            echo "Add Statement6 set<br>";
+            echo "Add statement6 set<br>";
 
             $statement6->execute();
-            echo "Add Statement6 Executed";
+            echo "Add Statement6 Executed<br>";
         }
         catch (Exception $ex)
         {
             echo "ERROR with DB. Details: $ex";
             die();
         }
+
     }
 
 // DEDUCT sales from employee sales after deletion
